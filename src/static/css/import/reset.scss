@@ -91,6 +91,7 @@ video {
     vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
+
 article,
 aside,
 details,
@@ -105,7 +106,8 @@ section {
     display: block;
 }
 
-ul, ol {
+ol,
+ul {
     list-style: none;
 }
 
@@ -115,6 +117,8 @@ q {
 }
 
 button {
+    cursor: pointer;
+    border: none;
     outline: none;
 }
 
@@ -128,18 +132,26 @@ q:before {
 
 a {
     text-decoration: none;
+    &:hover{
+        text-decoration: none;
+    }
 }
 
 img {
     max-width: 100%;
 }
 
-body{
+body {
     overflow-x: hidden;
 }
 
 html {
     box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
 }
 
 *,
