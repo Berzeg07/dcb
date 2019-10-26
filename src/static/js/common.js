@@ -1,4 +1,88 @@
 $(document).ready(function() {
+
+    $(function() {
+        $(window).scroll(function() {
+            if ($(this).scrollTop() >= 90) {
+                $('.header-bottom').addClass('stickytop');
+            } else {
+                $('.header-bottom').removeClass('stickytop');
+            }
+        });
+    });
+
+    function lineLength() {
+        if ($('.main-nav__first').hasClass('active')) {
+            $('.main-nav__line').css('width', '10%');
+        }
+        if ($('.main-nav__second').hasClass('active')) {
+            $('.main-nav__line').css('width', '34%');
+        }
+        if ($('.main-nav__third').hasClass('active')) {
+            $('.main-nav__line').css('width', '62%');
+        }
+        if ($('.main-nav__fourth').hasClass('active')) {
+            $('.main-nav__line').css('width', '83%');
+        }
+        if ($('.main-nav__fifth').hasClass('active')) {
+            $('.main-nav__line').css('width', '97%');
+        }
+    }
+
+    lineLength();
+
+    function lineColor() {
+        $('.main-nav__line').toggleClass('pink');
+    }
+
+    $('.main-nav__first').hover(function() {
+        $('.main-nav__line').css('width', '10%');
+        lineColor();
+        $(this).mouseleave(function() {
+            lineLength();
+        });
+    });
+
+    $('.main-nav__second').hover(function() {
+        $('.main-nav__line').css('width', '34%');
+        lineColor();
+        $(this).mouseleave(function() {
+            lineLength();
+        });
+    });
+
+    $('.main-nav__third').hover(function() {
+        $('.main-nav__line').css('width', '62%');
+        lineColor();
+        $(this).mouseleave(function() {
+            lineLength();
+        });
+    });
+
+    $('.main-nav__fourth').hover(function() {
+        $('.main-nav__line').css('width', '83%');
+        lineColor();
+        $(this).mouseleave(function() {
+            lineLength();
+        });
+    });
+
+    $('.main-nav__fifth').hover(function() {
+        $('.main-nav__line').css('width', '97%');
+        lineColor();
+        $(this).mouseleave(function() {
+            lineLength();
+        });
+    });
+
+    $('.main-nav__list li').click(function() {
+        $('.main-nav__list li').removeClass('active');
+        $(this).addClass('active');
+        lineLength();
+    });
+
+
+
+
     $('.search input').focus(function() {
         $(this).parent().addClass('active');
         $(this).blur(function() {
