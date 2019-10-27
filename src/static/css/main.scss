@@ -5,7 +5,6 @@
 body {
     font-family: "Geometria";
     color: $text-color;
-    height: 3000px;
 }
 
 .container {
@@ -78,7 +77,6 @@ body {
     z-index: 100;
 }
 /* Nikola */
-
 .cbutton--effect-nikola::after {
     background: rgba(111,148,182,0.1);
     z-index: 100;
@@ -368,7 +366,7 @@ body {
 .phone-box__hidden {
     position: absolute;
     left: 0;
-    top: 31px;
+    top: 32px;
     width: 100%;
     padding-top: 13px;
     box-shadow: -2px 4px 9px rgba(0, 0, 0, 0.1);
@@ -376,7 +374,7 @@ body {
     background: #ffffff;
     display: none;
     padding-bottom: 20px;
-    z-index: 10;
+    z-index: 15;
     @media(max-width: 767px) {
         top: 57px;
         width: 300px;
@@ -810,6 +808,10 @@ body {
 
 .banner-menu {
     margin-top: 25px;
+    margin-bottom: 25px;
+    @media(min-width: 1280px) {
+        margin-bottom: 80px;
+    }
     @media(min-width: 1890px) {
         display: -webkit-flex;
         display: -ms-flex;
@@ -1109,7 +1111,8 @@ body {
     }
 }
 
-.link-box__hidden {
+.link-box__hidden,
+.link-box__phone {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -1122,6 +1125,86 @@ body {
     background: $color-bg;
     transition: 0.5s;
     z-index: 10;
+}
+
+.link-box_phone {
+    .link-box__details {
+        bottom: 50px;
+    }
+}
+
+.link-box__phone {
+    a {
+        font-family: "Geometria-Medium";
+        font-size: 18px;
+        color: white;
+        display: inline-block;
+        position: relative;
+        padding-left: 28px;
+
+        &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 5px;
+            width: 10px;
+            height: 12px;
+            background: url("../img/phone-min.png") no-repeat center;
+        }
+
+        &:hover:after {
+            animation: 1200ms ease 0s normal none 1 running shake;
+        }
+    }
+
+    &:hover {
+        background: #ABA4BC;
+    }
+}
+@keyframes shake {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    10% {
+        transform: rotateZ(-30deg);
+    }
+
+    20% {
+        transform: rotateZ(15deg);
+    }
+
+    30% {
+        transform: rotateZ(-10deg);
+    }
+
+    40% {
+        transform: rotateZ(7.5deg);
+    }
+
+    50% {
+        transform: rotateZ(-6deg);
+    }
+
+    60% {
+        transform: rotateZ(5deg);
+    }
+
+    70% {
+        transform: rotateZ(-4.28571deg);
+    }
+
+    80% {
+        transform: rotateZ(3.75deg);
+    }
+
+    90% {
+        transform: rotateZ(-3.33333deg);
+    }
+
+    100% {
+        transform: rotateZ(0deg);
+    }
 }
 
 .list-hidden {
@@ -1182,5 +1265,114 @@ body {
         height: 24px;
         background-size: contain;
         opacity: 0.3;
+    }
+}
+
+.advantages {
+    margin-bottom: 25px;
+    @media(min-width: 1280px) {
+        margin-bottom: 65px;
+    }
+}
+
+.advantages__title {
+    text-transform: uppercase;
+    font-size: 24px;
+    color: $text-color;
+    text-align: center;
+    margin-bottom: 25px;
+
+    b {
+        font-family: "Geometria-Medium";
+    }
+    @media(min-width: 992px) {
+        font-size: 36px;
+        margin-bottom: 77px;
+    }
+}
+
+.advantages__item {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+    display: inline-block;
+    padding: 37px 58px;
+    @media(max-width: 767px) {
+        padding: 20px 18px;
+        display: block;
+        font-size: 14px;
+    }
+    @media(min-width: 768px) {
+        font-size: 18px;
+    }
+    @media(min-width: 1280px) {
+        font-size: 20px;
+    }
+
+    b {
+        font-family: "Geometria-Medium";
+    }
+}
+
+.advantages__list {
+    @media(min-width: 992px) {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    li {
+        text-align: center;
+        @media(min-width: 992px) {
+            width: 50%;
+            display: -webkit-flex;
+            display: -ms-flex;
+            display: flex;
+
+        }
+
+        &:first-child {
+            background: url("../img/adv-bg-1.jpg") no-repeat center;
+            background-size: cover;
+
+            .advantages__item {
+                background: #F24A9E;
+            }
+            @media(min-width: 992px) {
+                justify-content: flex-end;
+            }
+        }
+
+        &:nth-child(2) {
+            background: url("../img/adv-bg-2.jpg") no-repeat center;
+            background-size: cover;
+        }
+
+        &:nth-child(3) {
+            background: url("../img/adv-bg-3.jpg") no-repeat center;
+            background-size: cover;
+            @media(min-width: 992px) {
+                justify-content: flex-end;
+
+                .advantages__item {
+                    padding: 50px 58px;
+                }
+            }
+        }
+
+        &:nth-child(4) {
+            background: url("../img/adv-bg-4.jpg") no-repeat center;
+            background-size: cover;
+
+            .advantages__item {
+                background: #907DAC;
+                @media(min-width: 992px) {
+                    width: 390px;
+                    padding: 50px 58px;
+                }
+            }
+        }
     }
 }

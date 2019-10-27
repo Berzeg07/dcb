@@ -135,24 +135,53 @@
                 img(src="img/doctor.png")
             .link-box__hidden Вопрос - ответ
 
-        a(href="#").link-box
+        .link-box.link-box_phone
             .link-box__border
-                span.b-dotted.b-top
-                span.b-dotted.b-right
-                span.b-dotted.b-bottom
-                span.b-dotted.b-left
-                    
-                .link-box__icon.link-box__icon_center
+                a(href="#")
+                    span.b-dotted.b-top
+                    span.b-dotted.b-right
+                    span.b-dotted.b-bottom
+                    span.b-dotted.b-left
+                        
+                    .link-box__icon.link-box__icon_center
 
-                .link-box__about
-                    b Платные <br> 
-                    span услуги
-
-                .link-box__details 
-                    span Подробнее
+                    .link-box__about
+                        b Платные <br> 
+                        span услуги
+                        
+                    .link-box__details 
+                        span Подробнее
+                
+                .link-box__phone
+                     a(href="#") 216 44 44  
          
 
         a(href="#").link-box            
             .link-box__img
                 img(src="img/pacient.jpg")
             .link-box__hidden Полезно знать
+
+.advantages
+    .advantages__title 
+        |Наши 
+        b преимущества
+        
+    ul.advantages__list
+        li
+            .advantages__item
+                b широкий спектр услуг<br> 
+                |по медицинскому<br> обслуживанию детей
+        li
+            .advantages__item
+                |качественное и доступное <br>
+                b оказание медицинской помощи<br> маленьким пациентам
+        li
+            .advantages__item
+                |лучшие специалисты <br>
+                b в Екатеринбурге
+            
+        li
+            .advantages__item
+                |современное <br>
+                b оборудование
+                 
