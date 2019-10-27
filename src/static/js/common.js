@@ -1,5 +1,48 @@
 $(document).ready(function() {
 
+    var specialist = new Swiper('.specialist-slider', {
+        //   direction: 'vertical',
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        //   pagination: {
+        //     el: '.swiper-pagination',
+        //     clickable: true,
+        //   },
+    });
+
+    $('.specialist-slider').on('mouseenter', function(e) {
+        specialist.autoplay.start();
+    });
+    $('.specialist-slider').on('mouseleave', function(e) {
+        specialist.autoplay.stop();
+    });
+
+    $('.link-box__border').hover(function() {
+        $(this).find('.b-dotted').toggleClass('active');
+    });
+
+    $('.link-box_hidden').hover(function() {
+        $('.list-hidden').stop().slideToggle();
+    });
+
+    $('.link-box').hover(function() {
+        var img = $(this).find('.link-box__icon');
+        img.animate({
+            opacity: '0'
+        }, 200);
+        setTimeout(function() {
+            img.toggleClass('active');
+            img.animate({
+                opacity: '1'
+            }, 200);
+        }, 200);
+    });
+
     $(function() {
         $(window).scroll(function() {
             if ($(this).scrollTop() >= 90) {
