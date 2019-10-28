@@ -15,6 +15,46 @@ $(document).ready(function() {
         //   },
     });
 
+
+
+    var infoSlider = new Swiper('.info-slider', {
+        slidesPerView: 7,
+        spaceBetween: 15,
+        loop: false,
+        autoplay: {
+            delay: 1500,
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1
+            },
+            399: {
+                slidesPerView: 1
+            },
+            400: {
+                slidesPerView: 2
+            },
+            599: {
+                slidesPerView: 2
+            },
+            600: {
+                slidesPerView: 3
+            },
+            767: {
+                slidesPerView: 3
+            },
+            768: {
+                slidesPerView: 4
+            },
+            991: {
+                slidesPerView: 4
+            },
+            992: {
+                slidesPerView: 7
+            }
+        },
+    });
+
     $('.specialist-slider').on('mouseenter', function(e) {
         specialist.autoplay.start();
     });

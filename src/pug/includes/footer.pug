@@ -1,24 +1,139 @@
-.footer
-    p Футер
+footer.footer
+    .container
+        .footer__top
+            ul.footer__list
+                li
+                    |Моя больница
+                li
+                    a(href="#") Поликлиническая служба    
+                li
+                    a(href="#") Круглосуточный стационар
+                li
+                    a(href="#") Дневной стационар
+                li
+                    a(href="#") Городской детский кардиологический центр
+                li
+                    a(href="#") Детский диагностический центр
+
+            ul.footer__list
+                li
+                    |Платные услуги
+                li
+                    a(href="#") Бассейн   
+                li
+                    a(href="#") Кабинет косметолога
+                li
+                    a(href="#") Зубкинs Family
+                li
+                    a(href="#") Кабинет диетолога
+                li
+                    a(href="#") Водолечебница
+                li
+                    a(href="#") Консультации специалистов (с подразделами по узким специалистам)
+
+            ul.footer__list
+                li
+                    |Информация для пациента
+                li
+                    a(href="#") Важная информация   
+                li
+                    a(href="#") Отзывы
+                li
+                    a(href="#") Вопрос-ответ
+                li
+                    a(href="#") Полезные статьи
+
+            ul.footer__list
+                li
+                    |О нас
+                li
+                    a(href="#") Наша история  
+                li
+                    a(href="#") Специалисты
+                li
+                    a(href="#") Новости
+                li
+                    a(href="#") СМИ о нас
+                li
+                    a(href="#") Вакансии
+                li
+                    a(href="#") Технологии
+                li
+                    a(href="#") Направления деятельности
+                li
+                    a(href="#") Осуществление закупок
+
+            ul.footer__list
+                li
+                    |Контакты
+
+            ul.footer__info
+                li
+                    .assessment
+                        .assessment__img
+                            img(src="img/gerb.jpg")
+
+                        .assessment__article
+                            |Независимая оценка качества условий оказания услуг медицинскими организациями
+
+                        ul.assessment__bottom
+                            li
+                                a(href="#") Подробнее
+                            li
+                                a(href="#") Оценить    
+                li
+                    .adress-map
+                        button(type="button").marker
+                        .adress-map__info
+                            |г. Екатеринбург <br> ул. Нагорная, д.48
+
+                    .footer__phone
+                        a(href="#") 
+                            |+7 (343) 
+                            b 204 76 76
+
+                    button.modal-btn.full(type="button")
+                        span Записаться <br>на прием
+
+                    form(action="#").form-search
+                        label.search.header-top__search
+                            input(type="text" placeholder="Поиск")
+                            button(type="submit").search__btn
+
+                    a(href="#").btn Сотрудникам                             
+        .footer__logo
+            img(src="img/footer-logo.png")                
+
+    .footer__bottom
+        .container
+            .copyright © 2011 Детская Городская Клиническая Больница №11
+
+            .social
+                a(href="#").fb.cbutton.cbutton--effect-nikola
+                a(href="#").vk.cbutton.cbutton--effect-nikola
+                a(href="#").inst.cbutton.cbutton--effect-nikola
+
+            a(href="#").footer__btn Неотложная помощь ребенку
+            a(href="#").footer__btn Задать вопрос главному врачу   
+
+
+
+
+
 
 
 
 include ./footer-modals.pug
 script(src="libs/jquery/jquery-3.4.1.min.js")
 script(src="libs/parallax/parallax.min.js")
-script(src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js")
 script(src="libs/simplebox/simplebox.js")
 script(src="libs/simplebox/simplebox_util.js")
-script(src="libs/wow/wow.js")
 script(src="libs/jquery-ui-select/jquery-ui.min.js")
 script(src="libs/autosize/autosize.min.js")
-
 script(src="libs/owl.carusel-2.3.4/owl.carousel.min.js")
 
-
+script(src="libs/wow/wow.js")
+script(src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js")
 script(src="libs/mask/jquery.maskedinput.min.js")
 script(src="libs/clickEffect/classie.js")
 script(src="js/common.js")
-
-	
-    
