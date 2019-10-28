@@ -1,72 +1,74 @@
 footer.footer
     .container
         .footer__top
-            ul.footer__list
-                li
-                    |Моя больница
-                li
-                    a(href="#") Поликлиническая служба    
-                li
-                    a(href="#") Круглосуточный стационар
-                li
-                    a(href="#") Дневной стационар
-                li
-                    a(href="#") Городской детский кардиологический центр
-                li
-                    a(href="#") Детский диагностический центр
+            .footer__list-wrap
+                ul.footer__list
+                    li
+                        |Моя больница
+                    li
+                        a(href="#") Поликлиническая служба    
+                    li
+                        a(href="#") Круглосуточный стационар
+                    li
+                        a(href="#") Дневной стационар
+                    li
+                        a(href="#") Городской детский кардиологический центр
+                    li
+                        a(href="#") Детский диагностический центр
 
-            ul.footer__list
-                li
-                    |Платные услуги
-                li
-                    a(href="#") Бассейн   
-                li
-                    a(href="#") Кабинет косметолога
-                li
-                    a(href="#") Зубкинs Family
-                li
-                    a(href="#") Кабинет диетолога
-                li
-                    a(href="#") Водолечебница
-                li
-                    a(href="#") Консультации специалистов (с подразделами по узким специалистам)
+                ul.footer__list
+                    li
+                        |Платные услуги
+                    li
+                        a(href="#") Бассейн   
+                    li
+                        a(href="#") Кабинет косметолога
+                    li
+                        a(href="#") Зубкинs Family
+                    li
+                        a(href="#") Кабинет диетолога
+                    li
+                        a(href="#") Водолечебница
+                    li
+                        a(href="#") Консультации специалистов (с подразделами по узким специалистам)
 
-            ul.footer__list
-                li
-                    |Информация для пациента
-                li
-                    a(href="#") Важная информация   
-                li
-                    a(href="#") Отзывы
-                li
-                    a(href="#") Вопрос-ответ
-                li
-                    a(href="#") Полезные статьи
+                ul.footer__list
+                    li
+                        |Информация для пациента
+                    li
+                        a(href="#") Важная информация   
+                    li
+                        a(href="#") Отзывы
+                    li
+                        a(href="#") Вопрос-ответ
+                    li
+                        a(href="#") Полезные статьи
 
-            ul.footer__list
-                li
-                    |О нас
-                li
-                    a(href="#") Наша история  
-                li
-                    a(href="#") Специалисты
-                li
-                    a(href="#") Новости
-                li
-                    a(href="#") СМИ о нас
-                li
-                    a(href="#") Вакансии
-                li
-                    a(href="#") Технологии
-                li
-                    a(href="#") Направления деятельности
-                li
-                    a(href="#") Осуществление закупок
+                ul.footer__list
+                    li
+                        |О нас
+                    li
+                        a(href="#") Наша история  
+                    li
+                        a(href="#") Специалисты
+                    li
+                        a(href="#") Новости
+                    li
+                        a(href="#") СМИ о нас
+                    li
+                        a(href="#") Вакансии
+                    li
+                        a(href="#") Технологии
+                    li
+                        a(href="#") Направления деятельности
+                    li
+                        a(href="#") Осуществление закупок
 
-            ul.footer__list
-                li
-                    |Контакты
-
+                ul.footer__list
+                    li
+                        a(href="#") Контакты
+            
+        
             ul.footer__info
                 li
                     .assessment
@@ -92,15 +94,16 @@ footer.footer
                             |+7 (343) 
                             b 204 76 76
 
-                    button.modal-btn.full(type="button")
+                    button.modal-btn.full.modal-btn_footer(type="button")
                         span Записаться <br>на прием
 
-                    form(action="#").form-search
+                    form(action="#").form-search.form-search_footer
                         label.search.header-top__search
                             input(type="text" placeholder="Поиск")
                             button(type="submit").search__btn
 
                     a(href="#").btn Сотрудникам                             
+        
         .footer__logo
             img(src="img/footer-logo.png")                
 
@@ -108,13 +111,20 @@ footer.footer
         .container
             .copyright © 2011 Детская Городская Клиническая Больница №11
 
-            .social
+            .social.social_footer
                 a(href="#").fb.cbutton.cbutton--effect-nikola
+                    span
                 a(href="#").vk.cbutton.cbutton--effect-nikola
+                    span
                 a(href="#").inst.cbutton.cbutton--effect-nikola
-
-            a(href="#").footer__btn Неотложная помощь ребенку
-            a(href="#").footer__btn Задать вопрос главному врачу   
+                    span
+            
+            ul.footer__link
+                li
+                    a(href="#").footer__btn 
+                        span Неотложная <br>помощь ребенку
+                li
+                    a(href="#").footer__btn Задать вопрос главному врачу   
 
 
 
