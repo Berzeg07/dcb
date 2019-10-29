@@ -1,5 +1,19 @@
 $(document).ready(function() {
 
+    $('.tab-menu a').hover(function() {
+        $('a').removeClass('active');
+        $(this).addClass('active');
+        var tab = $(this).attr('menu');
+        $('.dropdowmmenu').not(tab).css({
+            'display': 'none'
+        });
+        $(tab).fadeIn(400);
+        $('.header-bottom').mouseleave(function(){
+            $('.dropdowmmenu').fadeOut();
+            $('.tab-menu a').removeClass('active');
+        });
+    });
+
     var specialist = new Swiper('.specialist-slider', {
         //   direction: 'vertical',
         slidesPerView: 1,
@@ -163,9 +177,6 @@ $(document).ready(function() {
         lineLength();
     });
 
-
-
-
     $('.search input').focus(function() {
         $(this).parent().addClass('active');
         $(this).blur(function() {
@@ -175,7 +186,19 @@ $(document).ready(function() {
 
     $('.burger').click(function() {
         $(this).toggleClass('open');
+        $('.mobile-menu').toggleClass('active');
     });
+
+    $(".show-dropdown").click(function(){
+        var $this = $(this);
+        if( !$this.hasClass("active")){
+           $(".mobile-menu__dropdown").slideUp();
+           $(".show-dropdown").removeClass("active");
+       }
+       $this.toggleClass("active");
+       $this.parents('li').find('.mobile-menu__dropdown').slideToggle()
+    });
+
 
     $('.phone-box').hover(function() {
         $('.phone-box__hidden').slideDown();
@@ -253,5 +276,46 @@ $(document).ready(function() {
 
     })();
 
+    ymaps.ready(init);
+
+    function init() {
+        var center = [56.873460, 60.735572];
+        var myMap = new ymaps.Map('main-map', {
+            center: center,
+            // controls: [],
+            zoom: 16
+        }, {
+            searchControlProvider: 'yandex#search'
+
+        });
+
+        myMap.behaviors.disable('scrollZoom');
+
+        var myPlacemark = new ymaps.Placemark(center, {
+            // Свойства.
+            // Содержимое иконки, балуна и хинта.
+            balloonContent: 'ул. Алексеева, 7',
+            hintContent: 'ул. Алексеева, 7'
+        }, {
+            // Опции.
+            iconLayout: 'default#image',
+            iconImageHref: 'img/map-marker.png',
+            iconImageSize: [188, 95]
+            // preset: 'twirl#violetIcon'
+        });
+
+        myMap.geoObjects.add(myPlacemark);
+    }
+
+    $('.marker').click(function(){
+        $('.main-map').fadeIn();
+        $('.blur-wrap').addClass('blur');
+        $('.overlay').fadeIn();
+        $('.map-close').click(function(){
+            $('.main-map').fadeOut();
+            $('.blur-wrap').removeClass('blur');
+            $('.overlay').fadeOut();
+        });
+    });
 
 });

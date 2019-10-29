@@ -1,4 +1,90 @@
 header.header
+    ul.mobile-menu
+        li
+            .mobile-menu__inner
+                a(href="#") Структура больницы
+                .show-dropdown
+                    
+            ul.mobile-menu__dropdown
+                li
+                    a(href="#") Поликлиническая служба
+                li
+                    a(href="#") Круглосуточный стационар
+                li
+                    a(href="#") Дневной стационар
+                li
+                    a(href="#") Детский диагностический <br>центр
+                li
+                    a(href="#") Платные услуги
+                li
+                    a(href="#") Городской детский <br>кардиологический центр
+                li
+                    a(href="#") Неотложная помощь
+            
+        li
+            .mobile-menu__inner
+                a(href="#") Платные услуги
+                .show-dropdown
+                    
+            ul.mobile-menu__dropdown
+                li
+                    a(href="#") Бассейн
+                li
+                    a(href="#") Кабинет косметолога
+                li
+                    a(href="#") Зубкинs Family
+                li
+                    a(href="#") Кабинет диетолога
+                li
+                    a(href="#") Водолечебница
+                li
+                    a(href="#") Консультация специалистов
+                
+        li
+            .mobile-menu__inner
+                a(href="#") Информация для <br>пациентов
+                .show-dropdown
+                    
+            ul.mobile-menu__dropdown
+                li
+                    a(href="#") Важная информация
+                li
+                    a(href="#") Отзывы
+                li
+                    a(href="#") Вопрос-ответ
+                
+        li
+            .mobile-menu__inner
+                a(href="#") О нас
+                .show-dropdown
+                    
+            ul.mobile-menu__dropdown
+                li
+                    a(href="#") Наша история
+                li
+                    a(href="#") Сотрудники
+                li
+                    a(href="#") Администрация
+                li
+                    a(href="#") Новости
+                li
+                    a(href="#") СМИ о нас
+                li
+                    a(href="#") Вакансии
+                li
+                    a(href="#") Осуществление закупок
+                li
+                    a(href="#") Направления деятельности
+                li
+                    a(href="#") Технологии
+                
+        li
+            a(href="#") Контакты
+        
+                
+            
+        
+        
     .header-top
         .header-top__item
             a(href="#").logo-mobile
@@ -75,14 +161,14 @@ header.header
             nav.main-nav
                 .main-nav__line
                 ul.main-nav__list
-                    li.main-nav__first.active
-                        a(href="#") Структура больницы
-                    li.main-nav__second
-                        a(href="#") Платные услуги
-                    li.main-nav__third
-                        a(href="#") Информация для пациентов
-                    li.main-nav__fourth
-                        a(href="#") О нас
+                    li.main-nav__first.tab-menu.active
+                        a(href="#" menu="#menu_structure") Структура больницы
+                    li.main-nav__second.tab-menu
+                        a(href="#" menu="#menu_services") Платные услуги
+                    li.main-nav__third.tab-menu
+                        a(href="#" menu="#menu_info") Информация для пациентов
+                    li.main-nav__fourth.tab-menu
+                        a(href="#" menu="#menu_about") О нас
                     li.main-nav__fifth
                         a(href="#") Контакты
             
@@ -132,11 +218,11 @@ header.header
                         .phone-box__article 
                             |Платные услуги   
             
-            button.modal-btn.sticky-el.full(type="button")
+            button.modal-btn.sticky-el.modal-btn_header.full(type="button")
                 span Записаться <br>на прием
         
         .header-bottom__item
-            .dropdowmmenu
+            .dropdowmmenu#menu_structure
                 .container
                     ul.dropdowmmenu__list
                         li
@@ -157,4 +243,58 @@ header.header
                     ul.dropdowmmenu__list
                         li
                             a(href="#") Неотложная помощь
-            
+            .dropdowmmenu#menu_services
+                .container
+                    ul.dropdowmmenu__list
+                        li
+                            a(href="#") Бассейн
+                        li
+                            a(href="#") Кабинет косметолога
+                        li
+                            a(href="#") Зубкинs Family
+                            
+                    ul.dropdowmmenu__list
+                        li
+                            a(href="#") Кабинет диетолога
+                        li
+                            a(href="#") Водолечебница
+                        li
+                            a(href="#") Консультация специалистов
+            .dropdowmmenu#menu_info
+                .container
+                    ul.dropdowmmenu__list
+                        li
+                            a(href="#") Важная информация
+                        li
+                            a(href="#") Отзывы
+                        li
+                            a(href="#") Вопрос-ответ
+                            
+                    ul.dropdowmmenu__list
+                        li
+                            a(href="#") Полезные статьи
+            .dropdowmmenu#menu_about
+                .container
+                    ul.dropdowmmenu__list
+                        li
+                            a(href="#") Наша история
+                        li
+                            a(href="#") Сотрудники
+                        li
+                            a(href="#") Администрация
+                            
+                    ul.dropdowmmenu__list
+                        li
+                            a(href="#") Новости
+                        li
+                            a(href="#") СМИ о нас
+                        li
+                            a(href="#") Вакансии
+                    
+                    ul.dropdowmmenu__list
+                        li
+                            a(href="#") Осуществление закупок
+                        li
+                            a(href="#") Направления деятельности
+                        li
+                            a(href="#") Технологии

@@ -9,8 +9,10 @@ html(lang="ru-RU")
         title #{title}
         include ../includes/links.pug
     body
-        block header
+        .blur-wrap
+            block header
 
-        block content
+            block content
 
-        block footer
+            block footer
+        include ../includes/footer-modals.pug        
