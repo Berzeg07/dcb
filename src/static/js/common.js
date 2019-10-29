@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+    // custom select *
+    $('.select-custom select').select2();
+
     $('.tab-menu a').hover(function() {
         $('a').removeClass('active');
         $(this).addClass('active');
@@ -18,6 +21,21 @@ $(document).ready(function() {
         //   direction: 'vertical',
         slidesPerView: 1,
         spaceBetween: 30,
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        //   pagination: {
+        //     el: '.swiper-pagination',
+        //     clickable: true,
+        //   },
+    });
+
+    var modalSlider = new Swiper('.doctor-slider', {
+        //   direction: 'vertical',
+        slidesPerView: 1,
+        spaceBetween: 10,
         loop: true,
         navigation: {
             nextEl: '.swiper-button-next',

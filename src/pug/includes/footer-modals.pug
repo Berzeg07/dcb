@@ -2,3 +2,146 @@
     .main-map__inner
         .map-close +
         #main-map 
+
+
+.modal.modal_reception-first
+    .modal__item
+        .modal__top
+            .modal__title Записаться на прием
+            .modal__article
+                |Заполните заявку и администратор позвонит вам в ближайшее рабочее время для подтверждения записи
+
+        .doctor-slider.swiper-container
+            .swiper-wrapper
+                .swiper-slide
+                    .doctor-slider__item
+                        img(src="img/doc.jpg")
+                .swiper-slide
+                    .doctor-slider__item
+                        img(src="img/doc.jpg")
+                .swiper-slide
+                    .doctor-slider__item
+                        img(src="img/doc.jpg")
+
+            .swiper-button-next
+            .swiper-button-prev
+
+    .modal__item.reception
+        ul.reception__top
+            li
+                .reception__num 1
+                span Шаг
+            li
+                .reseption__pick Выберите врача
+            li
+                .reseption__close
+
+        .reception__main
+            .reception__title Специализация врача
+
+            .select-custom.select-custom_spec
+                select
+                    option(value="Гинеколог") Гинеколог
+                    option(value="Дерматолог") Дерматолог
+                    option(value="Хирург") Хирург
+
+            .reception__title Выберите врача 
+
+            .select-custom.select-custom_name
+                select
+                    option(value="Бахарева В.Н.") Бахарева В.Н.
+                    option(value="Громовой В.Д.") Громовой В.Д.
+                    option(value="Соколова Т.В.") Соколова Т.В.             
+
+            ul.reception__price-box
+                li 
+                    span.reception__title Стоимость приема
+                li 
+                    span.reception__price 1300
+                    |р
+
+            .reception__article Цена указана за первичный прием к данному специалисту. 
+            .reception__title Дата и время приема
+
+            ul.reception__date
+                li
+                    label.reception__label
+                        imput(type="text" value="16.10.19")
+                li
+                    .select-custom.select-custom_time
+                        select
+                            option(value="9:00 - 10:00") 9:00 - 10:00
+                            option(value="11:00 - 12:00") 11:00 - 12:00
+                            option(value="12:00 - 13:00") 12:00 - 13:00
+
+            .reception__btn-wrap
+                button.reception__btn.reception__btn_next Личные данные                
+
+
+form(action="#").modal.modal_reception-next
+    .modal__item
+        .modal__top
+            .modal__title Записаться на прием
+            .modal__article
+                |Заполните заявку и администратор позвонит вам в ближайшее рабочее время для подтверждения записи
+
+        .doctor-slider.swiper-container
+            .swiper-wrapper
+                .swiper-slide
+                    .doctor-slider__item
+                        img(src="img/doc.jpg")
+                        ul.reseption-data
+                            li.reseption-data__name Гинеколог - Бахарева В.Н.
+                            li
+                                span.reseption-data__date 16.10.19
+                                span.reseption-data__time 15:30 - 16:00        
+                .swiper-slide
+                    .doctor-slider__item
+                        img(src="img/doc.jpg")
+                        ul.reseption-data
+                            li.reseption-data__name Гинеколог - Бахарева В.Н.
+                            li
+                                span.reseption-data__date 16.10.19
+                                span.reseption-data__time 15:30 - 16:00        
+                .swiper-slide
+                    .doctor-slider__item
+                        img(src="img/doc.jpg")
+                        ul.reseption-data
+                            li.reseption-data__name Гинеколог - Бахарева В.Н.
+                            li
+                                span.reseption-data__date 16.10.19
+                                span.reseption-data__time 15:30 - 16:00        
+
+            .swiper-button-next
+            .swiper-button-prev
+
+    .modal__item.reception
+        ul.reception__top
+            li
+                .reception__num 2
+                span Шаг
+            li
+                .reseption__pick Введите личные данные
+            li
+                .reseption__close
+
+        .reception__main        
+            .reception__user-info
+                input(type="text" placeholder="Имя")
+                input(type="text" placeholder="Фамилия")                    
+                input(type="text" placeholder="+7 (XXX) XXX XX XX") 
+
+            .reception__textarea-wrap
+                textarea(value="Текст")
+
+            .reception__privacy  
+                a(href="#") Нажав на кнопку “Записаться” Вы соглашаетесь с условиями 
+                    span публичной оферты 
+                    |и с 
+                    span условиями Политики обработки персональных данных
+        
+        ul.reception__btn-block                  
+            li
+                button(type="button").reception__back
+            li    
+                button(type="submit").reception__btn.reception__btn_submit Записаться
