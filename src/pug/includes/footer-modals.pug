@@ -44,6 +44,12 @@
                     option(value="Гинеколог") Гинеколог
                     option(value="Дерматолог") Дерматолог
                     option(value="Хирург") Хирург
+                    option(value="Гинеколог") Гинеколог
+                    option(value="Дерматолог") Дерматолог
+                    option(value="Хирург") Хирург
+                    option(value="Гинеколог") Гинеколог
+                    option(value="Дерматолог") Дерматолог
+                    option(value="Хирург") Хирург
 
             .reception__title Выберите врача 
 
@@ -55,10 +61,10 @@
 
             ul.reception__price-box
                 li 
-                    span.reception__title Стоимость приема
+                    span Стоимость приема
                 li 
-                    span.reception__price 1300
-                    |р
+                    span.reception__price 1300 
+                    b р
 
             .reception__article Цена указана за первичный прием к данному специалисту. 
             .reception__title Дата и время приема
@@ -66,7 +72,7 @@
             ul.reception__date
                 li
                     label.reception__label
-                        imput(type="text" value="16.10.19")
+                        input(type="text" value="16.10.19")
                 li
                     .select-custom.select-custom_time
                         select
@@ -75,8 +81,7 @@
                             option(value="12:00 - 13:00") 12:00 - 13:00
 
             .reception__btn-wrap
-                button.reception__btn.reception__btn_next Личные данные                
-
+                button.reception__btn.reception__btn_next(type="button") Личные данные
 
 form(action="#").modal.modal_reception-next
     .modal__item
@@ -129,10 +134,11 @@ form(action="#").modal.modal_reception-next
             .reception__user-info
                 input(type="text" placeholder="Имя")
                 input(type="text" placeholder="Фамилия")                    
-                input(type="text" placeholder="+7 (XXX) XXX XX XX") 
+                input(type="text" placeholder="+7 (XXX) XXX XX XX").phone-inp 
 
             .reception__textarea-wrap
-                textarea(value="Текст")
+                textarea
+                    |Текст
 
             .reception__privacy  
                 a(href="#") Нажав на кнопку “Записаться” Вы соглашаетесь с условиями 
@@ -140,8 +146,8 @@ form(action="#").modal.modal_reception-next
                     |и с 
                     span условиями Политики обработки персональных данных
         
-        ul.reception__btn-block                  
-            li
-                button(type="button").reception__back
-            li    
-                button(type="submit").reception__btn.reception__btn_submit Записаться
+            ul.reception__btn-block                  
+                li
+                    button(type="button").reception__back
+                li    
+                    button(type="submit").reception__btn.reception__btn_submit Записаться

@@ -3,6 +3,8 @@ $(document).ready(function() {
     // custom select *
     $('.select-custom select').select2();
 
+    $(".phone-inp").mask("7 (999) 999-99-99");
+
     $('.tab-menu a').hover(function() {
         $('a').removeClass('active');
         $(this).addClass('active');
