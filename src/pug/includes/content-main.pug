@@ -1,4 +1,4 @@
-.banner-menu
+.banner-menu.wow.fadeInUp(data-wow-duration="1.5s")
     .banner-menu__item
         img(src="img/girl.jpg").w100
         ul.banner-menu__article
@@ -167,26 +167,26 @@
         b преимущества
 
     ul.advantages__list
-        li
+        li.wow.slideInLeft(data-wow-duration="1.5s" data-wow-offset="10")
             .advantages__item
                 b широкий спектр услуг<br> 
                 |по медицинскому<br> обслуживанию детей
-        li
+        li.wow.slideInRight(data-wow-duration="1.5s" data-wow-offset="10")
             .advantages__item
                 |качественное и доступное <br>
                 b оказание медицинской помощи<br> маленьким пациентам
-        li
+        li.wow.slideInLeft(data-wow-duration="2.5s" data-wow-offset="10")
             .advantages__item
                 |лучшие специалисты <br>
                 b в Екатеринбурге
 
-        li
+        li.wow.slideInRight(data-wow-duration="2.5s" data-wow-offset="10")
             .advantages__item
                 |современное <br>
                 b оборудование
 
 .container
-    .main-info
+    .main-info.wow.fadeInUp(data-wow-duration="1.5s")
         .main-info__item
             h2.main-title Новости
             .main-info__box
@@ -310,7 +310,7 @@
                                 li В подарок!
 
 
-    .info-slider.swiper-container
+    .info-slider.swiper-container.wow.slideInLeft(data-wow-duration="1.5s" data-wow-offset="10")
         .swiper-wrapper
             .swiper-slide
                 .info-slider__item

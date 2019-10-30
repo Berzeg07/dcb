@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+    new WOW().init();
+
     function showModalStep(className, sliderName){
         $(className).addClass('active');
         var modalSlider = new Swiper(sliderName, {
