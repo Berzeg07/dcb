@@ -11,7 +11,7 @@
             .modal__article
                 |Заполните заявку и администратор позвонит вам в ближайшее рабочее время для подтверждения записи
 
-        .doctor-slider.swiper-container
+        .doctor-slider.doctor-slider_first.swiper-container
             .swiper-wrapper
                 .swiper-slide
                     .doctor-slider__item
@@ -40,7 +40,7 @@
             .reception__title Специализация врача
 
             .select-custom.select-custom_spec
-                select
+                select#selectSpec
                     option(value="Гинеколог") Гинеколог
                     option(value="Дерматолог") Дерматолог
                     option(value="Хирург") Хирург
@@ -54,7 +54,7 @@
             .reception__title Выберите врача 
 
             .select-custom.select-custom_name
-                select
+                select#selectDoc
                     option(value="Бахарева В.Н.") Бахарева В.Н.
                     option(value="Громовой В.Д.") Громовой В.Д.
                     option(value="Соколова Т.В.") Соколова Т.В.             
@@ -72,10 +72,10 @@
             ul.reception__date
                 li
                     label.reception__label
-                        input(type="text" value="16.10.19")
+                        input(type="text" placeholder="Выберите дату")#date.date-inp
                 li
                     .select-custom.select-custom_time
-                        select
+                        select#selectTime
                             option(value="9:00 - 10:00") 9:00 - 10:00
                             option(value="11:00 - 12:00") 11:00 - 12:00
                             option(value="12:00 - 13:00") 12:00 - 13:00
@@ -90,7 +90,7 @@ form(action="#").modal.modal_reception-next
             .modal__article
                 |Заполните заявку и администратор позвонит вам в ближайшее рабочее время для подтверждения записи
 
-        .doctor-slider.swiper-container
+        .doctor-slider.doctor-slider_next.swiper-container
             .swiper-wrapper
                 .swiper-slide
                     .doctor-slider__item
@@ -98,7 +98,7 @@ form(action="#").modal.modal_reception-next
                         ul.reseption-data
                             li.reseption-data__name Гинеколог - Бахарева В.Н.
                             li
-                                span.reseption-data__date 16.10.19
+                                span.reseption-data__date 16.10.19, 
                                 span.reseption-data__time 15:30 - 16:00        
                 .swiper-slide
                     .doctor-slider__item
@@ -106,7 +106,7 @@ form(action="#").modal.modal_reception-next
                         ul.reseption-data
                             li.reseption-data__name Гинеколог - Бахарева В.Н.
                             li
-                                span.reseption-data__date 16.10.19
+                                span.reseption-data__date 16.10.19, 
                                 span.reseption-data__time 15:30 - 16:00        
                 .swiper-slide
                     .doctor-slider__item
@@ -114,7 +114,7 @@ form(action="#").modal.modal_reception-next
                         ul.reseption-data
                             li.reseption-data__name Гинеколог - Бахарева В.Н.
                             li
-                                span.reseption-data__date 16.10.19
+                                span.reseption-data__date 16.10.19, 
                                 span.reseption-data__time 15:30 - 16:00        
 
             .swiper-button-next

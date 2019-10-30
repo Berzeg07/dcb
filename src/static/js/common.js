@@ -1,6 +1,50 @@
 $(document).ready(function() {
 
-    // custom select *
+    function showModalStep(className, sliderName){
+        $(className).addClass('active');
+        var modalSlider = new Swiper(sliderName, {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    }
+
+    $('.modal-btn').click(function() {
+        addBlur();
+        showModalStep('.modal_reception-first', '.doctor-slider');
+    });
+
+    $('.reception__btn_next').click(function(){
+        var dateVal = $('.date-inp').val();
+        if(dateVal == ''){
+            $('.date-inp').addClass('error');
+            return;
+        }
+        $('.date-inp').removeClass('error');
+        $('.modal_reception-first').removeClass('active');
+        showModalStep('.modal_reception-next', '.doctor-slider');
+    });
+
+    $('.reseption__close').click(function(){
+        $('.modal').removeClass('active');
+        removeBlur();
+    });
+
+    $('.reception__back').click(function(){
+        $('.modal_reception-next').removeClass('active');
+        showModalStep('.modal_reception-first', '.doctor-slider');
+    });
+
+    $('#date').datetimepicker({
+        locale: 'ru',
+        format: 'L',
+        minDate: new Date(),
+    });
+
     $('.select-custom select').select2();
 
     $(".phone-inp").mask("7 (999) 999-99-99");
@@ -13,7 +57,7 @@ $(document).ready(function() {
             'display': 'none'
         });
         $(tab).fadeIn(400);
-        $('.header-bottom').mouseleave(function(){
+        $('.header-bottom').mouseleave(function() {
             $('.dropdowmmenu').fadeOut();
             $('.tab-menu a').removeClass('active');
         });
@@ -34,20 +78,7 @@ $(document).ready(function() {
         //   },
     });
 
-    var modalSlider = new Swiper('.doctor-slider', {
-        //   direction: 'vertical',
-        slidesPerView: 1,
-        spaceBetween: 10,
-        loop: true,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        //   pagination: {
-        //     el: '.swiper-pagination',
-        //     clickable: true,
-        //   },
-    });
+
 
 
 
@@ -209,14 +240,14 @@ $(document).ready(function() {
         $('.mobile-menu').toggleClass('active');
     });
 
-    $(".show-dropdown").click(function(){
+    $(".show-dropdown").click(function() {
         var $this = $(this);
-        if( !$this.hasClass("active")){
-           $(".mobile-menu__dropdown").slideUp();
-           $(".show-dropdown").removeClass("active");
-       }
-       $this.toggleClass("active");
-       $this.parents('li').find('.mobile-menu__dropdown').slideToggle()
+        if (!$this.hasClass("active")) {
+            $(".mobile-menu__dropdown").slideUp();
+            $(".show-dropdown").removeClass("active");
+        }
+        $this.toggleClass("active");
+        $this.parents('li').find('.mobile-menu__dropdown').slideToggle()
     });
 
 
@@ -327,14 +358,24 @@ $(document).ready(function() {
         myMap.geoObjects.add(myPlacemark);
     }
 
-    $('.marker').click(function(){
-        $('.main-map').fadeIn();
+    function addBlur(){
         $('.blur-wrap').addClass('blur');
+        $('body').addClass('hidden');
         $('.overlay').fadeIn();
-        $('.map-close').click(function(){
+    }
+
+    function removeBlur(){
+        $('.blur-wrap').removeClass('blur');
+        $('body').removeClass('hidden');
+        $('.overlay').fadeOut();
+    }
+
+    $('.marker').click(function() {
+        $('.main-map').fadeIn();
+        addBlur();
+        $('.map-close').click(function() {
             $('.main-map').fadeOut();
-            $('.blur-wrap').removeClass('blur');
-            $('.overlay').fadeOut();
+            removeBlur();
         });
     });
 
