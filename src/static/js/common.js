@@ -1,5 +1,15 @@
 $(document).ready(function() {
 
+    $('.place-info').click(function(){
+        $(this).addClass('active');
+        var left = $(this).find('.place-info__hidden_left');
+        var right = $(this).find('.place-info__hidden_right');
+        left.slideDown();
+        right.slideDown();
+
+
+    });
+
     $('.pagination__list a').click(function(){
         $('.pagination__list a').removeClass('active');
         $(this).addClass('active');
@@ -378,6 +388,19 @@ $(document).ready(function() {
 
         myMap.behaviors.disable('scrollZoom');
 
+        var center2 = [56.873460, 60.735572];
+        var myMap2 = new ymaps.Map('main-mapInner', {
+            center: center,
+            // controls: [],
+            zoom: 16
+        }, {
+            searchControlProvider: 'yandex#search'
+        });
+
+        myMap.behaviors.disable('scrollZoom');
+        myMap2.behaviors.disable('scrollZoom');
+
+
         var myPlacemark = new ymaps.Placemark(center, {
             // Свойства.
             // Содержимое иконки, балуна и хинта.
@@ -392,6 +415,8 @@ $(document).ready(function() {
         });
 
         myMap.geoObjects.add(myPlacemark);
+        myMap2.geoObjects.add(myPlacemark);
+
     }
 
     function addBlur() {
