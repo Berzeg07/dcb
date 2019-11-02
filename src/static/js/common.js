@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     new WOW().init();
 
-    function showModalStep(className, sliderName){
+    function showModalStep(className, sliderName) {
         $(className).addClass('active');
         var modalSlider = new Swiper(sliderName, {
             slidesPerView: 1,
@@ -20,9 +20,9 @@ $(document).ready(function() {
         showModalStep('.modal_reception-first', '.doctor-slider');
     });
 
-    $('.reception__btn_next').click(function(){
+    $('.reception__btn_next').click(function() {
         var dateVal = $('.date-inp').val();
-        if(dateVal == ''){
+        if (dateVal == '') {
             $('.date-inp').addClass('error');
             return;
         }
@@ -31,12 +31,12 @@ $(document).ready(function() {
         showModalStep('.modal_reception-next', '.doctor-slider');
     });
 
-    $('.reseption__close').click(function(){
+    $('.reseption__close').click(function() {
         $('.modal').removeClass('active');
         removeBlur();
     });
 
-    $('.reception__back').click(function(){
+    $('.reception__back').click(function() {
         $('.modal_reception-next').removeClass('active');
         showModalStep('.modal_reception-first', '.doctor-slider');
     });
@@ -80,9 +80,29 @@ $(document).ready(function() {
         //   },
     });
 
-
-
-
+    var specialist = new Swiper('.top-slider', {
+        slidesPerView: 3,
+        spaceBetween: 0,
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1
+            },
+            767: {
+                slidesPerView: 1
+            },
+            768: {
+                slidesPerView: 2
+            },
+            1799: {
+                slidesPerView: 2
+            }
+        }
+    });
 
     var infoSlider = new Swiper('.info-slider', {
         slidesPerView: 7,
@@ -360,13 +380,13 @@ $(document).ready(function() {
         myMap.geoObjects.add(myPlacemark);
     }
 
-    function addBlur(){
+    function addBlur() {
         $('.blur-wrap').addClass('blur');
         $('body').addClass('hidden');
         $('.overlay').fadeIn();
     }
 
-    function removeBlur(){
+    function removeBlur() {
         $('.blur-wrap').removeClass('blur');
         $('body').removeClass('hidden');
         $('.overlay').fadeOut();
