@@ -1,5 +1,20 @@
 $(document).ready(function() {
 
+    $('.pagination__list a').click(function(){
+        $('.pagination__list a').removeClass('active');
+        $(this).addClass('active');
+    });
+
+    $('.sidebar__title').click(function() {
+        var $this = $(this);
+        if (!$this.hasClass("active")) {
+            $(".sidebar__hidden").slideUp();
+            $(".sidebar__title").removeClass("active");
+        }
+        $this.toggleClass("active");
+        $this.next().slideToggle();
+    });
+
     new WOW().init();
 
     function showModalStep(className, sliderName) {
@@ -274,7 +289,7 @@ $(document).ready(function() {
 
 
     $('.phone-box').hover(function() {
-        $('.phone-box__hidden').slideDown();
+        $(this).find('.phone-box__hidden').slideDown();
         $(this).addClass('active');
         $('.modal-btn').removeClass('full');
         $('.modal-btn').addClass('min');
@@ -359,7 +374,6 @@ $(document).ready(function() {
             zoom: 16
         }, {
             searchControlProvider: 'yandex#search'
-
         });
 
         myMap.behaviors.disable('scrollZoom');
