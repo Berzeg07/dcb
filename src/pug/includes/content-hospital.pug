@@ -1,0 +1,140 @@
+.top-inner.top-inner_red
+    .container
+        .top-inner__header.top-inner__header_hospital
+            h1.main-title.main-title_inner.main-title_white  Структура больницы 
+            p.top-inner__title Муниципальное автономное учреждение «Детская городская клиническая больница № 11» Сокращенное наименование: МАУ «ДГКБ № 11» 
+
+        .breadcrumbs
+            a(href="#") Главная            
+            a(href="#") Структура больницы    
+
+include ./top-slider.pug
+
+.container.articles
+    .page-block
+        include ./sidebar-hospital.pug
+        .content.content_block.content_hospital
+            a(href="#").link-box
+                .link-box__border
+                    span.b-dotted.b-top
+                    span.b-dotted.b-right
+                    span.b-dotted.b-bottom
+                    span.b-dotted.b-left
+
+                    .link-box__icon.link-box__icon_all
+
+                    .link-box__about
+                        b круглосуточный <br> 
+                        span стационар
+
+                    .link-box__details 
+                        span Подробнее
+                        
+            .link-box.link-box_hidden
+                .link-box__border
+                    .link-box__icon.link-box__icon_amb
+
+                    .link-box__about
+                        b амбулаторно- <br> поликлиническая<br> 
+                        span служба
+
+                .list-hidden
+                    .list-hidden__title Поликлиническая <br>служба
+
+                    .list-hidden__inner
+                        ul.list-hidden__link.list-hidden__link_top
+                            li 
+                                a(href="#") Как записаться на прием
+                            li
+                                a(href="#") Поликлиника №1
+                            li
+                                a(href="#") Поликлиника №2
+                            li
+                                a(href="#") Поликлиника №3
+                            li
+                                a(href="#") Поликлиника №4
+                            li
+                                a(href="#") Поликлиника №5
+                            li
+                                a(href="#") Поликлиника №6       
+
+                        ul.list-hidden__link.list-hidden__link_bottom
+                            li 
+                                a(href="#") Школьное и дошкольное <br>отделения
+                            li
+                                a(href="#") Отделение <br>восстановительного лечения
+                            li
+                                a(href="#") Отделение неотложной <br>помощи
+            
+            a(href="#").link-box
+                .link-box__border
+                    span.b-dotted.b-top
+                    span.b-dotted.b-right
+                    span.b-dotted.b-bottom
+                    span.b-dotted.b-left
+
+                    .link-box__icon.link-box__icon_diagn
+
+                    .link-box__about
+                        b Диагностический <br> 
+                        span Центр
+
+                    .link-box__details 
+                        span Подробнее
+            
+            a(href="#").link-box
+                .link-box__border
+                    span.b-dotted.b-top
+                    span.b-dotted.b-right
+                    span.b-dotted.b-bottom
+                    span.b-dotted.b-left
+
+                    .link-box__icon.link-box__icon_sun
+
+                    .link-box__about
+                        b Дневной <br> 
+                        span стационар
+
+                    .link-box__details 
+                        span Подробнее
+            
+            .link-box.link-box_phone
+                .link-box__border
+                    a(href="#")
+                        span.b-dotted.b-top
+                        span.b-dotted.b-right
+                        span.b-dotted.b-bottom
+                        span.b-dotted.b-left
+
+                        .link-box__icon.link-box__icon_center
+
+                        .link-box__about
+                            b Платные <br> 
+                            span услуги
+
+                        .link-box__details 
+                            span Подробнее
+
+                    .link-box__phone
+                        a(href="#") 216 44 44 
+            
+            a(href="#").link-box
+                .link-box__border
+                    span.b-dotted.b-top
+                    span.b-dotted.b-right
+                    span.b-dotted.b-bottom
+                    span.b-dotted.b-left
+
+                    .link-box__icon.link-box__icon_heart
+
+                    .link-box__about
+                        span Городской детский <br> 
+                        b кардиологический <br>центр
+
+                    .link-box__details 
+                        span Подробнее
+
+
+.container
+    .slider-inner
+        include ./slider-inner.pug

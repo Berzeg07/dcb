@@ -1497,16 +1497,17 @@ body.hidden {
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 30px;
-    @media(min-width: 768px){
+    @media(min-width: 768px) {
         justify-content: space-around;
     }
-    @media(min-width: 992px){
+    @media(min-width: 992px) {
         justify-content: space-between;
     }
 
-    .link-box__img{
+    .link-box__img {
         height: 100%;
-        img{
+
+        img {
             height: 100%;
         }
     }
@@ -1515,18 +1516,42 @@ body.hidden {
         max-width: 320px;
         width: 100%;
         margin-bottom: 23px;
-        box-shadow: -1px 4px 5px 0px rgba(0,0,0,0.35);
-        @media(min-width: 992px){
+        box-shadow: -1px 4px 5px 0 rgba(0,0,0,0.35);
+        @media(min-width: 992px) {
             max-width: 290px;
-            .link-box__hidden{
+
+            .link-box__hidden {
                 font-size: 15px;
             }
         }
-        @media(min-width: 1500px){
+        @media(min-width: 1500px) {
             max-width: 320px;
-            .link-box__hidden{
+
+            .link-box__hidden {
                 font-size: 18px;
             }
+        }
+    }
+}
+
+.content_hospital {
+    .link-box {
+        box-shadow: none;
+
+        .b-top {
+            top: 0;
+        }
+
+        .b-right {
+            right: 0;
+        }
+
+        .b-left {
+            left: 0;
+        }
+
+        .b-bottom {
+            bottom: 0;
         }
     }
 }
@@ -1608,6 +1633,18 @@ body.hidden {
 
 .link-box__icon_center.active {
     background: url("../img/center-2.png") no-repeat center;
+    background-size: contain;
+}
+
+.link-box__icon_diagn {
+    width: 198px;
+    height: 68px;
+    background: url("../img/diagn-1.png") no-repeat center;
+    background-size: contain;
+}
+
+.link-box__icon_diagn.active {
+    background: url("../img/diagn.png") no-repeat center;
     background-size: contain;
 }
 
@@ -3282,6 +3319,10 @@ body.hidden {
     color: #1B1626;
 }
 
+.sidebar__heading_info {
+    font-size: 18px;
+}
+
 .sidebar__list {
     li {
         margin-bottom: 22px;
@@ -3295,7 +3336,7 @@ body.hidden {
     display: block;
     cursor: pointer;
     position: relative;
-    padding-left: 40px;
+    padding-left: 30px;
     padding-right: 30px;
 
     &:before {
@@ -3647,4 +3688,18 @@ body.hidden {
     transition: 0.5s;
     cursor: pointer;
     z-index: 10;
+}
+
+.top-inner__header_hospital {
+    .top-inner__title {
+        font-size: 17px;
+        padding-right: 0;
+    }
+    @media(min-width: 1280px) {
+        .main-title {
+            max-width: 480px;
+            width: 100%;
+            margin-right: 0;
+        }
+    }
 }
