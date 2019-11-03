@@ -1,0 +1,97 @@
+.top-inner.top-inner_red
+    .container
+        .top-inner__header
+            h1.main-title.main-title_inner.main-title_white  О нас
+            p.top-inner__title Муниципальное автономное учреждение «Детская городская клиническая больница № 11»<br> Сокращенное наименование: МАУ «ДГКБ № 11» 
+
+        .breadcrumbs
+            a(href="#") Главная            
+            a(href="#") О нас    
+
+include ./top-slider.pug
+
+.container.articles
+    .page-block
+        include ./sidebar.pug
+        .content.content_block
+            a(href="#").link-box
+                .link-box__img
+                    img(src="img/baby.jpg")
+                .link-box__hidden Наша история
+                
+            .link-box
+                .specialist-slider.swiper-container
+                    .swiper-wrapper
+                        .swiper-slide
+                            a(href="#")
+                                .link-box__img
+                                    img(src="img/layer.jpg")
+
+                                .link-box__name 
+                                    b кардиолог <br>
+                                    span Светлана Борисовна
+                        .swiper-slide
+                            a(href="#")
+                                .link-box__img
+                                    img(src="img/layer.jpg")
+
+                                .link-box__name 
+                                    b кардиолог <br>
+                                    span Светлана Борисовна
+                        .swiper-slide
+                            a(href="#")
+                                .link-box__img
+                                    img(src="img/layer.jpg")
+
+                                .link-box__name 
+                                    b кардиолог <br>
+                                    span Светлана Борисовна
+
+                    .swiper-button-next
+                    .swiper-button-prev
+
+                .link-box__hidden Наши специалисты
+                
+            a(href="#").link-box
+                .link-box__img
+                    img(src="img/baby.jpg")
+                .link-box__hidden Администрация
+            
+            a(href="#").link-box
+                .link-box__img
+                    img(src="img/baby.jpg")
+                .link-box__hidden Новости
+                
+            a(href="#").link-box
+                .link-box__img
+                    img(src="img/baby.jpg")
+                .link-box__hidden СМИ о нас
+                
+            a(href="#").link-box
+                .link-box__img
+                    img(src="img/baby.jpg")
+                .link-box__hidden Вакансии
+                
+            a(href="#").link-box
+                .link-box__img
+                    img(src="img/baby.jpg")
+                .link-box__hidden Осуществление закупок
+                
+            a(href="#").link-box
+                .link-box__img
+                    img(src="img/baby.jpg")
+                .link-box__hidden Направления деятельности
+                
+            a(href="#").link-box
+                .link-box__img
+                    img(src="img/baby.jpg")
+                .link-box__hidden Технологии        
+
+
+
+
+
+
+.container
+    .slider-inner
+        include ./slider-inner.pug

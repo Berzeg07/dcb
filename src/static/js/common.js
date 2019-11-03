@@ -402,178 +402,6 @@ $(document).ready(function() {
 
         myMap.behaviors.disable('scrollZoom');
 
-        var myMap2 = new ymaps.Map('main-mapInner', {
-            center: center,
-            zoom: 16
-        }, {
-            searchControlProvider: 'yandex#search'
-        });
-
-        myMap2.behaviors.disable('scrollZoom');
-
-        var myMap3 = new ymaps.Map('main-mapInner2', {
-            center: center,
-            zoom: 16
-        }, {
-            searchControlProvider: 'yandex#search'
-        });
-
-        myMap3.behaviors.disable('scrollZoom');
-
-        var myMap4 = new ymaps.Map('main-mapInner3', {
-            center: center,
-            zoom: 16
-        }, {
-            searchControlProvider: 'yandex#search'
-        });
-
-        myMap4.behaviors.disable('scrollZoom');
-
-        var myMap5 = new ymaps.Map('main-mapInner4', {
-            center: center,
-            zoom: 16
-        }, {
-            searchControlProvider: 'yandex#search'
-        });
-
-        myMap5.behaviors.disable('scrollZoom');
-
-        var myMap6 = new ymaps.Map('main-mapInner5', {
-            center: center,
-            zoom: 16
-        }, {
-            searchControlProvider: 'yandex#search'
-        });
-
-        myMap6.behaviors.disable('scrollZoom');
-
-        var myMap7 = new ymaps.Map('main-mapInner6', {
-            center: center,
-            zoom: 16
-        }, {
-            searchControlProvider: 'yandex#search'
-        });
-
-        myMap7.behaviors.disable('scrollZoom');
-
-        var myMap8 = new ymaps.Map('main-mapInner7', {
-            center: center,
-            zoom: 16
-        }, {
-            searchControlProvider: 'yandex#search'
-        });
-
-        myMap8.behaviors.disable('scrollZoom');
-
-        var myMap9 = new ymaps.Map('main-mapInner8', {
-            center: center,
-            zoom: 16
-        }, {
-            searchControlProvider: 'yandex#search'
-        });
-
-        myMap9.behaviors.disable('scrollZoom');
-
-        var myMap10 = new ymaps.Map('main-mapInner9', {
-            center: center,
-            zoom: 16
-        }, {
-            searchControlProvider: 'yandex#search'
-        });
-
-        myMap10.behaviors.disable('scrollZoom');
-
-        var myMap11 = new ymaps.Map('main-mapInner10', {
-            center: center,
-            zoom: 16
-        }, {
-            searchControlProvider: 'yandex#search'
-        });
-
-        myMap11.behaviors.disable('scrollZoom');
-
-        var myMap12 = new ymaps.Map('main-mapInner11', {
-            center: center,
-            zoom: 16
-        }, {
-            searchControlProvider: 'yandex#search'
-        });
-
-        myMap12.behaviors.disable('scrollZoom');
-
-        var myMap13 = new ymaps.Map('main-mapInner12', {
-            center: center,
-            zoom: 16
-        }, {
-            searchControlProvider: 'yandex#search'
-        });
-
-        myMap13.behaviors.disable('scrollZoom');
-
-        var myMap14 = new ymaps.Map('main-mapInner13', {
-            center: center,
-            zoom: 16
-        }, {
-            searchControlProvider: 'yandex#search'
-        });
-
-        myMap14.behaviors.disable('scrollZoom');
-
-        var myMap15 = new ymaps.Map('main-mapInner14', {
-            center: center,
-            zoom: 16
-        }, {
-            searchControlProvider: 'yandex#search'
-        });
-
-        myMap15.behaviors.disable('scrollZoom');
-
-        var myMap16 = new ymaps.Map('main-mapInner15', {
-            center: center,
-            zoom: 16
-        }, {
-            searchControlProvider: 'yandex#search'
-        });
-
-        myMap16.behaviors.disable('scrollZoom');
-
-        var myMap17 = new ymaps.Map('main-mapInner16', {
-            center: center,
-            zoom: 16
-        }, {
-            searchControlProvider: 'yandex#search'
-        });
-
-        myMap17.behaviors.disable('scrollZoom');
-
-        var myMap18 = new ymaps.Map('main-mapInner17', {
-            center: center,
-            zoom: 16
-        }, {
-            searchControlProvider: 'yandex#search'
-        });
-
-        myMap18.behaviors.disable('scrollZoom');
-
-        var myMap19 = new ymaps.Map('main-mapInner18', {
-            center: center,
-            zoom: 16
-        }, {
-            searchControlProvider: 'yandex#search'
-        });
-
-        myMap19.behaviors.disable('scrollZoom');
-
-        var myMap20 = new ymaps.Map('main-mapInner19', {
-            center: center,
-            zoom: 16
-        }, {
-            searchControlProvider: 'yandex#search'
-        });
-
-        myMap20.behaviors.disable('scrollZoom');
-
-
         var myPlacemark = new ymaps.Placemark(center, {
             // Свойства.
             // Содержимое иконки, балуна и хинта.
@@ -586,274 +414,453 @@ $(document).ready(function() {
             iconImageSize: [188, 95]
             // preset: 'twirl#violetIcon'
         });
-
-        var myPlacemark2 = new ymaps.Placemark(center, {
-            // Свойства.
-            // Содержимое иконки, балуна и хинта.
-            balloonContent: 'ул. Алексеева, 7',
-            hintContent: 'ул. Алексеева, 7'
-        }, {
-            // Опции.
-            iconLayout: 'default#image',
-            iconImageHref: 'img/map-marker.png',
-            iconImageSize: [188, 95]
-            // preset: 'twirl#violetIcon'
-        });
-
-        var myPlacemark3 = new ymaps.Placemark(center, {
-            // Свойства.
-            // Содержимое иконки, балуна и хинта.
-            balloonContent: 'ул. Алексеева, 7',
-            hintContent: 'ул. Алексеева, 7'
-        }, {
-            // Опции.
-            iconLayout: 'default#image',
-            iconImageHref: 'img/map-marker.png',
-            iconImageSize: [188, 95]
-            // preset: 'twirl#violetIcon'
-        });
-
-        var myPlacemark4 = new ymaps.Placemark(center, {
-            // Свойства.
-            // Содержимое иконки, балуна и хинта.
-            balloonContent: 'ул. Алексеева, 7',
-            hintContent: 'ул. Алексеева, 7'
-        }, {
-            // Опции.
-            iconLayout: 'default#image',
-            iconImageHref: 'img/map-marker.png',
-            iconImageSize: [188, 95]
-            // preset: 'twirl#violetIcon'
-        });
-
-        var myPlacemark5 = new ymaps.Placemark(center, {
-            // Свойства.
-            // Содержимое иконки, балуна и хинта.
-            balloonContent: 'ул. Алексеева, 7',
-            hintContent: 'ул. Алексеева, 7'
-        }, {
-            // Опции.
-            iconLayout: 'default#image',
-            iconImageHref: 'img/map-marker.png',
-            iconImageSize: [188, 95]
-            // preset: 'twirl#violetIcon'
-        });
-
-        var myPlacemark6 = new ymaps.Placemark(center, {
-            // Свойства.
-            // Содержимое иконки, балуна и хинта.
-            balloonContent: 'ул. Алексеева, 7',
-            hintContent: 'ул. Алексеева, 7'
-        }, {
-            // Опции.
-            iconLayout: 'default#image',
-            iconImageHref: 'img/map-marker.png',
-            iconImageSize: [188, 95]
-            // preset: 'twirl#violetIcon'
-        });
-
-        var myPlacemark7 = new ymaps.Placemark(center, {
-            // Свойства.
-            // Содержимое иконки, балуна и хинта.
-            balloonContent: 'ул. Алексеева, 7',
-            hintContent: 'ул. Алексеева, 7'
-        }, {
-            // Опции.
-            iconLayout: 'default#image',
-            iconImageHref: 'img/map-marker.png',
-            iconImageSize: [188, 95]
-            // preset: 'twirl#violetIcon'
-        });
-
-        var myPlacemark8 = new ymaps.Placemark(center, {
-            // Свойства.
-            // Содержимое иконки, балуна и хинта.
-            balloonContent: 'ул. Алексеева, 7',
-            hintContent: 'ул. Алексеева, 7'
-        }, {
-            // Опции.
-            iconLayout: 'default#image',
-            iconImageHref: 'img/map-marker.png',
-            iconImageSize: [188, 95]
-            // preset: 'twirl#violetIcon'
-        });
-
-        var myPlacemark9 = new ymaps.Placemark(center, {
-            // Свойства.
-            // Содержимое иконки, балуна и хинта.
-            balloonContent: 'ул. Алексеева, 7',
-            hintContent: 'ул. Алексеева, 7'
-        }, {
-            // Опции.
-            iconLayout: 'default#image',
-            iconImageHref: 'img/map-marker.png',
-            iconImageSize: [188, 95]
-            // preset: 'twirl#violetIcon'
-        });
-
-        var myPlacemark10 = new ymaps.Placemark(center, {
-            // Свойства.
-            // Содержимое иконки, балуна и хинта.
-            balloonContent: 'ул. Алексеева, 7',
-            hintContent: 'ул. Алексеева, 7'
-        }, {
-            // Опции.
-            iconLayout: 'default#image',
-            iconImageHref: 'img/map-marker.png',
-            iconImageSize: [188, 95]
-            // preset: 'twirl#violetIcon'
-        });
-
-        var myPlacemark11 = new ymaps.Placemark(center, {
-            // Свойства.
-            // Содержимое иконки, балуна и хинта.
-            balloonContent: 'ул. Алексеева, 7',
-            hintContent: 'ул. Алексеева, 7'
-        }, {
-            // Опции.
-            iconLayout: 'default#image',
-            iconImageHref: 'img/map-marker.png',
-            iconImageSize: [188, 95]
-            // preset: 'twirl#violetIcon'
-        });
-
-        var myPlacemark12 = new ymaps.Placemark(center, {
-            // Свойства.
-            // Содержимое иконки, балуна и хинта.
-            balloonContent: 'ул. Алексеева, 7',
-            hintContent: 'ул. Алексеева, 7'
-        }, {
-            // Опции.
-            iconLayout: 'default#image',
-            iconImageHref: 'img/map-marker.png',
-            iconImageSize: [188, 95]
-            // preset: 'twirl#violetIcon'
-        });
-
-        var myPlacemark13 = new ymaps.Placemark(center, {
-            // Свойства.
-            // Содержимое иконки, балуна и хинта.
-            balloonContent: 'ул. Алексеева, 7',
-            hintContent: 'ул. Алексеева, 7'
-        }, {
-            // Опции.
-            iconLayout: 'default#image',
-            iconImageHref: 'img/map-marker.png',
-            iconImageSize: [188, 95]
-            // preset: 'twirl#violetIcon'
-        });
-
-        var myPlacemark14 = new ymaps.Placemark(center, {
-            // Свойства.
-            // Содержимое иконки, балуна и хинта.
-            balloonContent: 'ул. Алексеева, 7',
-            hintContent: 'ул. Алексеева, 7'
-        }, {
-            // Опции.
-            iconLayout: 'default#image',
-            iconImageHref: 'img/map-marker.png',
-            iconImageSize: [188, 95]
-            // preset: 'twirl#violetIcon'
-        });
-
-        var myPlacemark15 = new ymaps.Placemark(center, {
-            // Свойства.
-            // Содержимое иконки, балуна и хинта.
-            balloonContent: 'ул. Алексеева, 7',
-            hintContent: 'ул. Алексеева, 7'
-        }, {
-            // Опции.
-            iconLayout: 'default#image',
-            iconImageHref: 'img/map-marker.png',
-            iconImageSize: [188, 95]
-            // preset: 'twirl#violetIcon'
-        });
-
-        var myPlacemark16 = new ymaps.Placemark(center, {
-            // Свойства.
-            // Содержимое иконки, балуна и хинта.
-            balloonContent: 'ул. Алексеева, 7',
-            hintContent: 'ул. Алексеева, 7'
-        }, {
-            // Опции.
-            iconLayout: 'default#image',
-            iconImageHref: 'img/map-marker.png',
-            iconImageSize: [188, 95]
-            // preset: 'twirl#violetIcon'
-        });
-
-        var myPlacemark17 = new ymaps.Placemark(center, {
-            // Свойства.
-            // Содержимое иконки, балуна и хинта.
-            balloonContent: 'ул. Алексеева, 7',
-            hintContent: 'ул. Алексеева, 7'
-        }, {
-            // Опции.
-            iconLayout: 'default#image',
-            iconImageHref: 'img/map-marker.png',
-            iconImageSize: [188, 95]
-            // preset: 'twirl#violetIcon'
-        });
-
-        var myPlacemark18 = new ymaps.Placemark(center, {
-            // Свойства.
-            // Содержимое иконки, балуна и хинта.
-            balloonContent: 'ул. Алексеева, 7',
-            hintContent: 'ул. Алексеева, 7'
-        }, {
-            // Опции.
-            iconLayout: 'default#image',
-            iconImageHref: 'img/map-marker.png',
-            iconImageSize: [188, 95]
-            // preset: 'twirl#violetIcon'
-        });
-
-        var myPlacemark19 = new ymaps.Placemark(center, {
-            // Свойства.
-            // Содержимое иконки, балуна и хинта.
-            balloonContent: 'ул. Алексеева, 7',
-            hintContent: 'ул. Алексеева, 7'
-        }, {
-            // Опции.
-            iconLayout: 'default#image',
-            iconImageHref: 'img/map-marker.png',
-            iconImageSize: [188, 95]
-            // preset: 'twirl#violetIcon'
-        });
-
-        var myPlacemark20 = new ymaps.Placemark(center, {
-            // Свойства.
-            // Содержимое иконки, балуна и хинта.
-            balloonContent: 'ул. Алексеева, 7',
-            hintContent: 'ул. Алексеева, 7'
-        }, {
-            // Опции.
-            iconLayout: 'default#image',
-            iconImageHref: 'img/map-marker.png',
-            iconImageSize: [188, 95]
-            // preset: 'twirl#violetIcon'
-        });
-
         myMap.geoObjects.add(myPlacemark);
-        myMap2.geoObjects.add(myPlacemark2);
-        myMap3.geoObjects.add(myPlacemark3);
-        myMap4.geoObjects.add(myPlacemark4);
-        myMap5.geoObjects.add(myPlacemark5);
-        myMap6.geoObjects.add(myPlacemark6);
-        myMap7.geoObjects.add(myPlacemark7);
-        myMap8.geoObjects.add(myPlacemark8);
-        myMap9.geoObjects.add(myPlacemark9);
-        myMap10.geoObjects.add(myPlacemark10);
-        myMap11.geoObjects.add(myPlacemark11);
-        myMap12.geoObjects.add(myPlacemark12);
-        myMap13.geoObjects.add(myPlacemark13);
-        myMap14.geoObjects.add(myPlacemark14);
-        myMap15.geoObjects.add(myPlacemark15);
-        myMap16.geoObjects.add(myPlacemark16);
-        myMap17.geoObjects.add(myPlacemark17);
-        myMap18.geoObjects.add(myPlacemark18);
-        myMap19.geoObjects.add(myPlacemark19);
-        myMap20.geoObjects.add(myPlacemark20);
+
+        var check = document.querySelector('#main-mapInner');
+
+        if (check != null) {
+            var myMap2 = new ymaps.Map('main-mapInner', {
+                center: center,
+                zoom: 16
+            }, {
+                searchControlProvider: 'yandex#search'
+            });
+
+            myMap2.behaviors.disable('scrollZoom');
+
+            var myMap3 = new ymaps.Map('main-mapInner2', {
+                center: center,
+                zoom: 16
+            }, {
+                searchControlProvider: 'yandex#search'
+            });
+
+            myMap3.behaviors.disable('scrollZoom');
+
+            var myMap4 = new ymaps.Map('main-mapInner3', {
+                center: center,
+                zoom: 16
+            }, {
+                searchControlProvider: 'yandex#search'
+            });
+
+            myMap4.behaviors.disable('scrollZoom');
+
+            var myMap5 = new ymaps.Map('main-mapInner4', {
+                center: center,
+                zoom: 16
+            }, {
+                searchControlProvider: 'yandex#search'
+            });
+
+            myMap5.behaviors.disable('scrollZoom');
+
+            var myMap6 = new ymaps.Map('main-mapInner5', {
+                center: center,
+                zoom: 16
+            }, {
+                searchControlProvider: 'yandex#search'
+            });
+
+            myMap6.behaviors.disable('scrollZoom');
+
+            var myMap7 = new ymaps.Map('main-mapInner6', {
+                center: center,
+                zoom: 16
+            }, {
+                searchControlProvider: 'yandex#search'
+            });
+
+            myMap7.behaviors.disable('scrollZoom');
+
+            var myMap8 = new ymaps.Map('main-mapInner7', {
+                center: center,
+                zoom: 16
+            }, {
+                searchControlProvider: 'yandex#search'
+            });
+
+            myMap8.behaviors.disable('scrollZoom');
+
+            var myMap9 = new ymaps.Map('main-mapInner8', {
+                center: center,
+                zoom: 16
+            }, {
+                searchControlProvider: 'yandex#search'
+            });
+
+            myMap9.behaviors.disable('scrollZoom');
+
+            var myMap10 = new ymaps.Map('main-mapInner9', {
+                center: center,
+                zoom: 16
+            }, {
+                searchControlProvider: 'yandex#search'
+            });
+
+            myMap10.behaviors.disable('scrollZoom');
+
+            var myMap11 = new ymaps.Map('main-mapInner10', {
+                center: center,
+                zoom: 16
+            }, {
+                searchControlProvider: 'yandex#search'
+            });
+
+            myMap11.behaviors.disable('scrollZoom');
+
+            var myMap12 = new ymaps.Map('main-mapInner11', {
+                center: center,
+                zoom: 16
+            }, {
+                searchControlProvider: 'yandex#search'
+            });
+
+            myMap12.behaviors.disable('scrollZoom');
+
+            var myMap13 = new ymaps.Map('main-mapInner12', {
+                center: center,
+                zoom: 16
+            }, {
+                searchControlProvider: 'yandex#search'
+            });
+
+            myMap13.behaviors.disable('scrollZoom');
+
+            var myMap14 = new ymaps.Map('main-mapInner13', {
+                center: center,
+                zoom: 16
+            }, {
+                searchControlProvider: 'yandex#search'
+            });
+
+            myMap14.behaviors.disable('scrollZoom');
+
+            var myMap15 = new ymaps.Map('main-mapInner14', {
+                center: center,
+                zoom: 16
+            }, {
+                searchControlProvider: 'yandex#search'
+            });
+
+            myMap15.behaviors.disable('scrollZoom');
+
+            var myMap16 = new ymaps.Map('main-mapInner15', {
+                center: center,
+                zoom: 16
+            }, {
+                searchControlProvider: 'yandex#search'
+            });
+
+            myMap16.behaviors.disable('scrollZoom');
+
+            var myMap17 = new ymaps.Map('main-mapInner16', {
+                center: center,
+                zoom: 16
+            }, {
+                searchControlProvider: 'yandex#search'
+            });
+
+            myMap17.behaviors.disable('scrollZoom');
+
+            var myMap18 = new ymaps.Map('main-mapInner17', {
+                center: center,
+                zoom: 16
+            }, {
+                searchControlProvider: 'yandex#search'
+            });
+
+            myMap18.behaviors.disable('scrollZoom');
+
+            var myMap19 = new ymaps.Map('main-mapInner18', {
+                center: center,
+                zoom: 16
+            }, {
+                searchControlProvider: 'yandex#search'
+            });
+
+            myMap19.behaviors.disable('scrollZoom');
+
+            var myMap20 = new ymaps.Map('main-mapInner19', {
+                center: center,
+                zoom: 16
+            }, {
+                searchControlProvider: 'yandex#search'
+            });
+
+            myMap20.behaviors.disable('scrollZoom');
+
+
+
+
+            var myPlacemark2 = new ymaps.Placemark(center, {
+                // Свойства.
+                // Содержимое иконки, балуна и хинта.
+                balloonContent: 'ул. Алексеева, 7',
+                hintContent: 'ул. Алексеева, 7'
+            }, {
+                // Опции.
+                iconLayout: 'default#image',
+                iconImageHref: 'img/map-marker.png',
+                iconImageSize: [188, 95]
+                // preset: 'twirl#violetIcon'
+            });
+
+            var myPlacemark3 = new ymaps.Placemark(center, {
+                // Свойства.
+                // Содержимое иконки, балуна и хинта.
+                balloonContent: 'ул. Алексеева, 7',
+                hintContent: 'ул. Алексеева, 7'
+            }, {
+                // Опции.
+                iconLayout: 'default#image',
+                iconImageHref: 'img/map-marker.png',
+                iconImageSize: [188, 95]
+                // preset: 'twirl#violetIcon'
+            });
+
+            var myPlacemark4 = new ymaps.Placemark(center, {
+                // Свойства.
+                // Содержимое иконки, балуна и хинта.
+                balloonContent: 'ул. Алексеева, 7',
+                hintContent: 'ул. Алексеева, 7'
+            }, {
+                // Опции.
+                iconLayout: 'default#image',
+                iconImageHref: 'img/map-marker.png',
+                iconImageSize: [188, 95]
+                // preset: 'twirl#violetIcon'
+            });
+
+            var myPlacemark5 = new ymaps.Placemark(center, {
+                // Свойства.
+                // Содержимое иконки, балуна и хинта.
+                balloonContent: 'ул. Алексеева, 7',
+                hintContent: 'ул. Алексеева, 7'
+            }, {
+                // Опции.
+                iconLayout: 'default#image',
+                iconImageHref: 'img/map-marker.png',
+                iconImageSize: [188, 95]
+                // preset: 'twirl#violetIcon'
+            });
+
+            var myPlacemark6 = new ymaps.Placemark(center, {
+                // Свойства.
+                // Содержимое иконки, балуна и хинта.
+                balloonContent: 'ул. Алексеева, 7',
+                hintContent: 'ул. Алексеева, 7'
+            }, {
+                // Опции.
+                iconLayout: 'default#image',
+                iconImageHref: 'img/map-marker.png',
+                iconImageSize: [188, 95]
+                // preset: 'twirl#violetIcon'
+            });
+
+            var myPlacemark7 = new ymaps.Placemark(center, {
+                // Свойства.
+                // Содержимое иконки, балуна и хинта.
+                balloonContent: 'ул. Алексеева, 7',
+                hintContent: 'ул. Алексеева, 7'
+            }, {
+                // Опции.
+                iconLayout: 'default#image',
+                iconImageHref: 'img/map-marker.png',
+                iconImageSize: [188, 95]
+                // preset: 'twirl#violetIcon'
+            });
+
+            var myPlacemark8 = new ymaps.Placemark(center, {
+                // Свойства.
+                // Содержимое иконки, балуна и хинта.
+                balloonContent: 'ул. Алексеева, 7',
+                hintContent: 'ул. Алексеева, 7'
+            }, {
+                // Опции.
+                iconLayout: 'default#image',
+                iconImageHref: 'img/map-marker.png',
+                iconImageSize: [188, 95]
+                // preset: 'twirl#violetIcon'
+            });
+
+            var myPlacemark9 = new ymaps.Placemark(center, {
+                // Свойства.
+                // Содержимое иконки, балуна и хинта.
+                balloonContent: 'ул. Алексеева, 7',
+                hintContent: 'ул. Алексеева, 7'
+            }, {
+                // Опции.
+                iconLayout: 'default#image',
+                iconImageHref: 'img/map-marker.png',
+                iconImageSize: [188, 95]
+                // preset: 'twirl#violetIcon'
+            });
+
+            var myPlacemark10 = new ymaps.Placemark(center, {
+                // Свойства.
+                // Содержимое иконки, балуна и хинта.
+                balloonContent: 'ул. Алексеева, 7',
+                hintContent: 'ул. Алексеева, 7'
+            }, {
+                // Опции.
+                iconLayout: 'default#image',
+                iconImageHref: 'img/map-marker.png',
+                iconImageSize: [188, 95]
+                // preset: 'twirl#violetIcon'
+            });
+
+            var myPlacemark11 = new ymaps.Placemark(center, {
+                // Свойства.
+                // Содержимое иконки, балуна и хинта.
+                balloonContent: 'ул. Алексеева, 7',
+                hintContent: 'ул. Алексеева, 7'
+            }, {
+                // Опции.
+                iconLayout: 'default#image',
+                iconImageHref: 'img/map-marker.png',
+                iconImageSize: [188, 95]
+                // preset: 'twirl#violetIcon'
+            });
+
+            var myPlacemark12 = new ymaps.Placemark(center, {
+                // Свойства.
+                // Содержимое иконки, балуна и хинта.
+                balloonContent: 'ул. Алексеева, 7',
+                hintContent: 'ул. Алексеева, 7'
+            }, {
+                // Опции.
+                iconLayout: 'default#image',
+                iconImageHref: 'img/map-marker.png',
+                iconImageSize: [188, 95]
+                // preset: 'twirl#violetIcon'
+            });
+
+            var myPlacemark13 = new ymaps.Placemark(center, {
+                // Свойства.
+                // Содержимое иконки, балуна и хинта.
+                balloonContent: 'ул. Алексеева, 7',
+                hintContent: 'ул. Алексеева, 7'
+            }, {
+                // Опции.
+                iconLayout: 'default#image',
+                iconImageHref: 'img/map-marker.png',
+                iconImageSize: [188, 95]
+                // preset: 'twirl#violetIcon'
+            });
+
+            var myPlacemark14 = new ymaps.Placemark(center, {
+                // Свойства.
+                // Содержимое иконки, балуна и хинта.
+                balloonContent: 'ул. Алексеева, 7',
+                hintContent: 'ул. Алексеева, 7'
+            }, {
+                // Опции.
+                iconLayout: 'default#image',
+                iconImageHref: 'img/map-marker.png',
+                iconImageSize: [188, 95]
+                // preset: 'twirl#violetIcon'
+            });
+
+            var myPlacemark15 = new ymaps.Placemark(center, {
+                // Свойства.
+                // Содержимое иконки, балуна и хинта.
+                balloonContent: 'ул. Алексеева, 7',
+                hintContent: 'ул. Алексеева, 7'
+            }, {
+                // Опции.
+                iconLayout: 'default#image',
+                iconImageHref: 'img/map-marker.png',
+                iconImageSize: [188, 95]
+                // preset: 'twirl#violetIcon'
+            });
+
+            var myPlacemark16 = new ymaps.Placemark(center, {
+                // Свойства.
+                // Содержимое иконки, балуна и хинта.
+                balloonContent: 'ул. Алексеева, 7',
+                hintContent: 'ул. Алексеева, 7'
+            }, {
+                // Опции.
+                iconLayout: 'default#image',
+                iconImageHref: 'img/map-marker.png',
+                iconImageSize: [188, 95]
+                // preset: 'twirl#violetIcon'
+            });
+
+            var myPlacemark17 = new ymaps.Placemark(center, {
+                // Свойства.
+                // Содержимое иконки, балуна и хинта.
+                balloonContent: 'ул. Алексеева, 7',
+                hintContent: 'ул. Алексеева, 7'
+            }, {
+                // Опции.
+                iconLayout: 'default#image',
+                iconImageHref: 'img/map-marker.png',
+                iconImageSize: [188, 95]
+                // preset: 'twirl#violetIcon'
+            });
+
+            var myPlacemark18 = new ymaps.Placemark(center, {
+                // Свойства.
+                // Содержимое иконки, балуна и хинта.
+                balloonContent: 'ул. Алексеева, 7',
+                hintContent: 'ул. Алексеева, 7'
+            }, {
+                // Опции.
+                iconLayout: 'default#image',
+                iconImageHref: 'img/map-marker.png',
+                iconImageSize: [188, 95]
+                // preset: 'twirl#violetIcon'
+            });
+
+            var myPlacemark19 = new ymaps.Placemark(center, {
+                // Свойства.
+                // Содержимое иконки, балуна и хинта.
+                balloonContent: 'ул. Алексеева, 7',
+                hintContent: 'ул. Алексеева, 7'
+            }, {
+                // Опции.
+                iconLayout: 'default#image',
+                iconImageHref: 'img/map-marker.png',
+                iconImageSize: [188, 95]
+                // preset: 'twirl#violetIcon'
+            });
+
+            var myPlacemark20 = new ymaps.Placemark(center, {
+                // Свойства.
+                // Содержимое иконки, балуна и хинта.
+                balloonContent: 'ул. Алексеева, 7',
+                hintContent: 'ул. Алексеева, 7'
+            }, {
+                // Опции.
+                iconLayout: 'default#image',
+                iconImageHref: 'img/map-marker.png',
+                iconImageSize: [188, 95]
+                // preset: 'twirl#violetIcon'
+            });
+
+
+            myMap2.geoObjects.add(myPlacemark2);
+            myMap3.geoObjects.add(myPlacemark3);
+            myMap4.geoObjects.add(myPlacemark4);
+            myMap5.geoObjects.add(myPlacemark5);
+            myMap6.geoObjects.add(myPlacemark6);
+            myMap7.geoObjects.add(myPlacemark7);
+            myMap8.geoObjects.add(myPlacemark8);
+            myMap9.geoObjects.add(myPlacemark9);
+            myMap10.geoObjects.add(myPlacemark10);
+            myMap11.geoObjects.add(myPlacemark11);
+            myMap12.geoObjects.add(myPlacemark12);
+            myMap13.geoObjects.add(myPlacemark13);
+            myMap14.geoObjects.add(myPlacemark14);
+            myMap15.geoObjects.add(myPlacemark15);
+            myMap16.geoObjects.add(myPlacemark16);
+            myMap17.geoObjects.add(myPlacemark17);
+            myMap18.geoObjects.add(myPlacemark18);
+            myMap19.geoObjects.add(myPlacemark19);
+            myMap20.geoObjects.add(myPlacemark20);
+        }
     }
 
     function addBlur() {
