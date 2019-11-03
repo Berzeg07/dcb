@@ -1,0 +1,36 @@
+.top-inner.top-inner_red
+    .container
+        h1.main-title.main-title_inner.main-title_white  Информация для пациента
+        .breadcrumbs
+            a(href="#") Главная            
+            a(href="#") Информация для пациента    
+
+include ./top-slider.pug
+
+.container.articles
+    .page-block
+        include ./sidebar-info.pug
+        .content.content_block
+            a(href="#").link-box
+                .link-box__img
+                    img(src="img/micro.jpg")
+                .link-box__hidden Важная информация
+        
+            a(href="#").link-box
+                .link-box__img
+                    img(src="img/micro.jpg")
+                .link-box__hidden Отзывы
+            
+            a(href="#").link-box
+                .link-box__img
+                    img(src="img/doctor.png")
+                .link-box__hidden Вопрос-ответ
+                
+            a(href="#").link-box
+                .link-box__img
+                    img(src="img/pacient.jpg")
+                .link-box__hidden Полезно знать
+                      
+.container
+    .slider-inner
+        include ./slider-inner.pug
