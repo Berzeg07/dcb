@@ -164,13 +164,16 @@ body.hidden {
     }
 }
 
-#main-mapInner {
+.main-mapInner {
     width: 100%;
     height: 626px;
 }
 
 .contact__title-group {
-    margin-bottom: 40px;
+    margin-bottom: 10px;
+    @media(min-width: 992px){
+        padding-left: 50px;
+    }
 
     &:hover {
         .link-hidden {
@@ -3444,7 +3447,7 @@ body.hidden {
 }
 
 .place-info {
-    box-shadow: 0 0 13px -2px rgba(0,0,0,0.53);
+    box-shadow: 0 0 13px -2px rgba(0,0,0,0.33);
     margin-bottom: 5px;
     cursor: pointer;
     @media(min-width: 992px) {
@@ -3456,7 +3459,7 @@ body.hidden {
 
     .place-info__item_first {
         @media(min-width: 992px) {
-            width: 39%;
+            width: 80%;
         }
         @media(min-width: 1280px) {
             padding-right: 30px;
@@ -3465,7 +3468,7 @@ body.hidden {
 
     .place-info__item_second {
         @media(min-width: 992px) {
-            width: 59%;
+            width: 20%;
         }
     }
 
@@ -3480,7 +3483,12 @@ body.hidden {
     }
 }
 
-.place-info.active {
+.place-info-wrap{
+    position: relative;
+}
+
+.place-info-wrap.active {
+    cursor: auto;
     .place-info__plus {
         width: 35px;
         height: 35px;
@@ -3507,7 +3515,16 @@ body.hidden {
     .place-info__item_first {
         padding-top: 65px;
         @media(max-width: 991px) {
+
             padding-top: 30px;
+        }
+        @media(min-width: 992px) {
+            width: 39%;
+        }
+    }
+    .place-info__item_second {
+        @media(min-width: 992px) {
+            width: 59%;
         }
     }
 }
@@ -3524,18 +3541,18 @@ body.hidden {
 
 .place-info__item_second {
     position: relative;
+}
 
-    .place-info__plus {
-        position: absolute;
-        width: 25px;
-        height: 25px;
-        right: 43px;
-        color: #41376b;
-        border-radius: 10em;
-        top: 9px;
-        background: #EDEDED url("../img/plus-s.png") no-repeat center;
-        transition: 0.5s;
-        cursor: pointer;
-        z-index: 10;
-    }
+.place-info__plus {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 43px;
+    color: #41376b;
+    border-radius: 10em;
+    top: 9px;
+    background: #EDEDED url("../img/plus-s.png") no-repeat center;
+    transition: 0.5s;
+    cursor: pointer;
+    z-index: 10;
 }
