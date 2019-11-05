@@ -120,6 +120,24 @@ body.hidden {
     }
 }
 
+.breadcrumbs_white {
+    &:after {
+        background: white;
+    }
+
+    a {
+        color: #946993;
+
+        &:hover {
+            color: white;
+
+            &:after {
+                color: #946993;
+            }
+        }
+    }
+}
+
 .container {
     max-width: 1460px;
     padding: 0 15px;
@@ -170,6 +188,11 @@ body.hidden {
         bottom: 0;
         transition: 0.5s;
     }
+}
+
+.main-title_lower {
+    text-transform: none;
+    color: white;
 }
 
 .main-mapInner {
@@ -236,6 +259,11 @@ body.hidden {
 
 .top-inner_article {
     background: url("../img/page-bg.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.top-inner_article-inner {
+    background: url("../img/page-inner.jpg") no-repeat center;
     background-size: cover;
 }
 
@@ -343,7 +371,6 @@ body.hidden {
     z-index: 100;
 }
 /* Nikola */
-
 .cbutton--effect-nikola::after {
     background: rgba(111,148,182,0.1);
     z-index: 100;
@@ -442,8 +469,8 @@ body.hidden {
     padding: 10px;
     display: none;
 
-    &__inner,
-    #main-map {
+    #main-map,
+    &__inner {
         width: inherit;
         height: 380px;
     }
@@ -3269,6 +3296,16 @@ body.hidden {
     margin-top: 44px;
 }
 
+.content {
+    max-width: 1100px;
+    @media(min-width: 992px) {
+        margin-left: 27px;
+    }
+    @media(min-width: 1280px) {
+        margin-left: 0;
+    }
+}
+
 .sidebar {
     @media(min-width: 1280px) {
         margin-right: 28px;
@@ -3701,5 +3738,67 @@ body.hidden {
             width: 100%;
             margin-right: 0;
         }
+    }
+}
+
+.articles-box__img {
+    margin-bottom: 18px;
+
+    img {
+        display: block;
+    }
+    box-shadow: -1px 4px 5px 0 rgba(0, 0, 0, 0.35);
+}
+
+.articles-box__img-box {
+    max-width: 475px;
+    margin: 0 auto;
+
+    p {
+        text-align: right;
+    }
+}
+
+.inner-title {
+    font-family: "Geometria-Medium";
+    font-size: 24px;
+    margin-bottom: 25px;
+    @media(min-width: 992px) {
+        margin-bottom: 40px;
+    }
+}
+
+.content_article-inner {
+    p {
+        font-family: "Geometria-Light";
+        margin-bottom: 32px;
+
+        b {
+            font-family: "Geometria-Bold";
+        }
+    }
+}
+
+.articles-box {
+    margin-bottom: 45px;
+    @media(min-width: 1280px) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.articles-box__text {
+    @media(min-width: 1280px) {
+        max-width: 620px;
+        padding-left: 32px;
+    }
+}
+
+.btn-more {
+    padding-top: 20px;
+    margin-bottom: 35px;
+    text-align: center;
+    @media(min-width: 992px) {
+        margin-bottom: 80px;
     }
 }
