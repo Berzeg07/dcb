@@ -384,6 +384,7 @@ body.hidden {
     z-index: 100;
 }
 /* Nikola */
+
 .cbutton--effect-nikola::after {
     background: rgba(111,148,182,0.1);
     z-index: 100;
@@ -482,8 +483,8 @@ body.hidden {
     padding: 10px;
     display: none;
 
-    #main-map,
-    &__inner {
+    &__inner,
+    #main-map {
         width: inherit;
         height: 380px;
     }
@@ -2159,6 +2160,11 @@ body.hidden {
             bottom: -50px;
         }
     }
+}
+
+.btn-animate_blue {
+    background: #42336C;
+    color: white;
 }
 
 .main-info__preview {
@@ -3922,4 +3928,295 @@ body.hidden {
     margin: 0 auto;
     border-radius: 5px;
     overflow: hidden;
+}
+
+.question__info {
+    display: flex;
+    justify-content: space-between;
+    @media(min-width: 1280px) {
+        display: block;
+        width: 106px;
+    }
+}
+
+.question__inner {
+    @media(min-width: 1280px) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.answear__num,
+.question__num {
+    font-family: "Geometria-Medium";
+    width: 32px;
+    height: 32px;
+    background: #42336C;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    line-height: 32px;
+}
+
+.answear {
+    padding: 25px 10px;
+    background: #EDEDED;
+    display: none;
+    @media(min-width: 992px) {
+        padding: 25px;
+    }
+}
+
+.answear__inner {
+    background: white;
+    box-shadow: -1px 2px 5px -1px rgba(0, 0, 0, 0.54);
+    padding: 20px 10px;
+    @media(min-width: 1280px) {
+        padding: 60px 20px 55px 50px;
+    }
+}
+
+.question__num {
+    margin-bottom: 18px;
+}
+
+.answear__article {
+    @media(min-width: 1280px) {
+        padding-right: 55px;
+    }
+
+    p {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.answear__num {
+    background: #E6519B;
+}
+
+.answear__title {
+    font-family: "Geometria-Medium";
+    font-size: 30px;
+}
+
+.question__name {
+    font-size: 14px;
+    margin-bottom: 18px;
+
+    li {
+        &:last-child {
+            color: #9A979F;
+        }
+    }
+}
+
+.question__title {
+    font-family: "Geometria-Bold";
+    margin-bottom: 22px;
+}
+
+.question__btn-wrap {
+    text-align: right;
+    padding-bottom: 20px;
+    padding-right: 25px;
+    display: none;
+    @media(min-width: 992px) {
+        padding-right: 96px;
+    }
+}
+
+.question__article {
+    padding: 20px 27px 15px;
+    border-radius: 15px;
+    background: #EDEDED;
+    margin-bottom: 22px;
+    @media(min-width: 1280px) {
+        width: calc(100% - 106px);
+    }
+
+    p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+}
+
+.answear__top {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 24px;
+
+    .place-info__plus {
+        right: 15px;
+        transform: rotate(45deg);
+
+        &:hover {
+            transform: rotate(90deg);
+        }
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        height: 6px;
+        width: 125px;
+        bottom: 0;
+        left: 0;
+        background: #E6519B;
+    }
+
+    .answear__title {
+        margin-left: 35px;
+    }
+}
+
+.qa-block {
+    margin-bottom: 10px;
+}
+
+.answear__name {
+    font-family: "Geometria-Bold";
+    font-size: 14px;
+    display: flex;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        left: 40px;
+        bottom: 0;
+        max-width: 420px;
+        width: 100%;
+        height: 6px;
+        background: #EDEDED;
+    }
+    @media(min-width: 992px) {
+        margin-bottom: 35px;
+    }
+
+    li {
+        &:first-child {
+            margin-right: 30px;
+        }
+    }
+
+    a {
+        color: #42336C;
+        border-bottom: 1px solid #42336C;
+
+        &:hover {
+            color: #E6519B;
+            border-bottom: 1px solid #E6519B;
+        }
+    }
+}
+
+.add-question {
+    margin-bottom: 30px;
+    @media(min-width: 768px){
+        display: flex;
+    }
+    &__item {
+        &:first-child {
+            border-radius: 10px;
+            background: #EDEDED;
+            padding: 20px 10px;
+            @media(min-width: 768px){
+                width: calc(100% - 304px);
+            }
+            @media(min-width: 992px) {
+                padding: 34px 42px 48px;
+            }
+        }
+
+        &:last-child {
+            padding: 15px 10px;
+            @media(min-width: 768px){
+                width: 304px;
+                padding-left: 50px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+.add-question__inner{
+    @media(min-width: 1280px){
+        display: flex;
+        .textarea{
+            width: calc(100% - 300px);
+        }
+        .add-question__inp{
+            width: 300px;
+            padding-left: 20px;
+            input{
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.add-question__title {
+    font-family: "Geometria-Medium";
+    font-size: 24px;
+    margin-bottom: 35px;
+}
+
+.textarea {
+    font-family: "Geometria-Light";
+    font-size: 16px;
+    border-radius: 10px;
+    background: white;
+    width: 100%;
+    height: 98px;
+    resize: none;
+    padding: 17px 15px;
+    border: 1px solid transparent;
+    color: #9A979F;
+    margin-bottom: 2px;
+
+    &:focus {
+        border: 1px solid #66529C;
+        color: #322F3E;
+    }
+}
+
+.add-question__inp {
+    input {
+        font-family: "Geometria-Light";
+        color: #322F3E;
+        font-size: 16px;
+        width: 100%;
+        height: 45px;
+        border-radius: 10px;
+        background: white;
+        border: none;
+        padding: 0 27px;
+        margin-bottom: 7px;
+        border: 1px solid transparent;
+        &:focus{
+            border: 1px solid #66529C;
+        }
+    }
+}
+
+.privacy {
+    font-family: "Geometria-Light";
+    font-size: 10px;
+    color: #7D66BB;
+    padding: 15px 0;
+
+    a {
+        color: #7D66BB;
+        border-bottom: 1px solid #7D66BB;
+    }
 }

@@ -1,5 +1,18 @@
 $(document).ready(function() {
 
+    $('.qa-block').hover(function(){
+        $(this).find('.question__btn-wrap').stop().slideToggle();
+    });
+
+    $('.btn-animate_question').click(function(e){
+        e.preventDefault();
+        $(this).parents('.qa-block').find('.answear').slideToggle();
+    });
+
+    $('.close-answear').click(function(){
+        $(this).parents('.answear').slideUp();
+    });
+
     $('.place-info').click(function() {
         var $this = $(this);
         var parent = $this.parent();
