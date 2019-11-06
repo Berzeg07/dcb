@@ -384,7 +384,6 @@ body.hidden {
     z-index: 100;
 }
 /* Nikola */
-
 .cbutton--effect-nikola::after {
     background: rgba(111,148,182,0.1);
     z-index: 100;
@@ -483,8 +482,8 @@ body.hidden {
     padding: 10px;
     display: none;
 
-    &__inner,
-    #main-map {
+    #main-map,
+    &__inner {
         width: inherit;
         height: 380px;
     }
@@ -3317,6 +3316,7 @@ body.hidden {
 
 .content {
     max-width: 1100px;
+    width: 100%;
     @media(min-width: 992px) {
         margin-left: 27px;
     }
@@ -4118,15 +4118,16 @@ body.hidden {
 
 .add-question {
     margin-bottom: 30px;
-    @media(min-width: 768px){
+    @media(min-width: 768px) {
         display: flex;
     }
+
     &__item {
         &:first-child {
             border-radius: 10px;
             background: #EDEDED;
             padding: 20px 10px;
-            @media(min-width: 768px){
+            @media(min-width: 768px) {
                 width: calc(100% - 304px);
             }
             @media(min-width: 992px) {
@@ -4136,7 +4137,7 @@ body.hidden {
 
         &:last-child {
             padding: 15px 10px;
-            @media(min-width: 768px){
+            @media(min-width: 768px) {
                 width: 304px;
                 padding-left: 50px;
                 display: flex;
@@ -4147,17 +4148,20 @@ body.hidden {
     }
 }
 
-.add-question__inner{
-    @media(min-width: 1280px){
+.add-question__inner {
+    @media(min-width: 1280px) {
         display: flex;
-        .textarea{
+
+        .textarea {
             width: calc(100% - 300px);
         }
-        .add-question__inp{
+
+        .add-question__inp {
             width: 300px;
             padding-left: 20px;
-            input{
-                &:last-child{
+
+            input {
+                &:last-child {
                     margin-bottom: 0;
                 }
             }
@@ -4203,7 +4207,8 @@ body.hidden {
         padding: 0 27px;
         margin-bottom: 7px;
         border: 1px solid transparent;
-        &:focus{
+
+        &:focus {
             border: 1px solid #66529C;
         }
     }
@@ -4219,4 +4224,78 @@ body.hidden {
         color: #7D66BB;
         border-bottom: 1px solid #7D66BB;
     }
+}
+
+.service-block {
+    @media(min-width: 1280px) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        &:first-child {
+            max-width: 459px;
+            width: 100%;
+
+            &:hover {
+                .service-block__img {
+                    box-shadow: -1px 2px 5px -1px rgba(0, 0, 0, 0.54);
+                }
+
+                .service-block__btn-wrap {
+                    opacity: 1;
+                }
+            }
+        }
+
+        &:last-child {
+            @media(min-width: 1280px) {
+                padding-left: 40px;
+            }
+        }
+    }
+}
+
+.main-contact_service {
+    .main-contact__adress {
+        margin-bottom: 18px;
+    }
+}
+
+.service-block__img {
+    transition: 0.5s;
+
+    img {
+        display: block;
+    }
+}
+
+.text-pink {
+    font-family: "Geometria-Bold";
+    color: #E6519B;
+}
+
+.main-contact__list_service {
+    li {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.link-specialist {
+    text-transform: uppercase;
+    border-bottom: 1px solid #2B2735;
+}
+
+.service-block__btn-wrap {
+    text-align: center;
+    padding-top: 17px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.service-block__title {
+    font-family: "Geometria-Medium";
+    font-size: 24px;
 }
