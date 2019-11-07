@@ -4,6 +4,10 @@ $(document).ready(function() {
         $(this).find('.question__btn-wrap').stop().slideToggle();
     });
 
+    $('.reviews-block').hover(function(){
+        $(this).find('.reviews-block__btn').stop().slideToggle();
+    });
+
     $('.btn-animate_question').click(function(e){
         e.preventDefault();
         $(this).parents('.qa-block').find('.answear').slideToggle();

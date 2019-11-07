@@ -138,6 +138,12 @@ body.hidden {
     }
 }
 
+.breadcrumbs_blue {
+    &:after {
+        background: #42336C;
+    }
+}
+
 .container {
     max-width: 1460px;
     padding: 0 15px;
@@ -3400,14 +3406,15 @@ body.hidden {
 
 .service-slider__item {
     position: relative;
-    &:after{
+
+    &:after {
         content: '';
         position: absolute;
         bottom: 0;
         left: 0;
         width: 100%;
         height: 5px;
-        background: url('../img/line-sl.png') no-repeat center;
+        background: url("../img/line-sl.png") no-repeat center;
         background-size: cover;
     }
     @media(min-width: 1280px) {
@@ -3802,7 +3809,7 @@ body.hidden {
     }
 }
 
-.main-contact__title_next{
+.main-contact__title_next {
     max-width: 200px;
     width: 100%;
 }
@@ -4535,4 +4542,91 @@ body.hidden {
 .service-block__title {
     font-family: "Geometria-Medium";
     font-size: 24px;
+}
+
+.reviews-block {
+    padding-bottom: 30px;
+
+    &:hover {
+        .reviews-block__inner {
+            .reviews-block__item {
+                &:first-child {
+                    box-shadow: -1px 2px 5px -1px rgba(0, 0, 0, 0.54);
+                }
+            }
+        }
+
+        .reviews-block__author span:after {
+            background: #E6519B;
+        }
+    }
+}
+
+.reviews-block__date {
+    font-family: "Geometria-Medium";
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.reviews-block__author {
+    max-width: 312px;
+    width: 100%;
+    margin-bottom: 15px;
+
+    span {
+        font-family: "Geometria-Bold";
+        display: inline-block;
+        width: 100%;
+        padding: 15px 15px 15px 50px;
+        position: relative;
+        background: #EDEDED;
+        border-radius: 10em;
+
+        &:after {
+            content: '';
+            position: absolute;
+            width: 19px;
+            height: 19px;
+            border-radius: 10em;
+            left: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #67529E;
+            transition: 0.5s;
+        }
+    }
+}
+
+.reviews-block__inner {
+    @media(min-width: 768px) {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .reviews-block__item {
+        &:first-child {
+            max-width: 456px;
+            width: 100%;
+            transition: 0.5s;
+
+            img {
+                display: block;
+            }
+            @media(min-width: 768px) {
+                margin-right: 55px;
+            }
+        }
+
+        &:last-child {
+            @media(min-width: 768px) {
+                width: calc(100% - 456px);
+            }
+        }
+    }
+}
+
+.reviews-block__btn {
+    text-align: right;
+    display: none;
 }
