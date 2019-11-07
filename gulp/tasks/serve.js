@@ -3,7 +3,7 @@ module.exports = function() {
         $.bs.init({
             server: {
                 baseDir: "./build",
-                index: "reviews.html"
+                index: "gastro.html"
             }
         });
     });

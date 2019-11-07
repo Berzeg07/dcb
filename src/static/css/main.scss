@@ -20,6 +20,10 @@ body.hidden {
     padding: 0 25px;
 }
 
+.slider-inner_no-border {
+    border-top: none;
+}
+
 .pagination {
     padding: 22px 25px;
     @media(min-width: 992px) {
@@ -952,6 +956,15 @@ body.hidden {
                 text-indent: 0;
             }
         }
+    }
+}
+
+.modal-btn_inner {
+    font-family: "Geometria-Light";
+
+    &:hover {
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+        transition: all 0.2s linear 0s;
     }
 }
 
@@ -2163,6 +2176,25 @@ body.hidden {
 
         &:after {
             bottom: -50px;
+        }
+    }
+}
+
+.btn-animate_white {
+    background: white;
+    max-width: 535px;
+    width: 100%;
+    color: #2F1E5F;
+
+    &:after {
+        max-width: 650px;
+        width: 100%;
+        left: 0;
+    }
+
+    &:hover {
+        &:after {
+            bottom: -52px;
         }
     }
 }
@@ -4506,6 +4538,12 @@ body.hidden {
     }
 }
 
+.service-block__item_width {
+    @media(min-width: 1600px) {
+        width: calc(100% - 460px);
+    }
+}
+
 .service-block__img {
     transition: 0.5s;
 
@@ -4629,4 +4667,287 @@ body.hidden {
 .reviews-block__btn {
     text-align: right;
     display: none;
+}
+
+.main-contact_service {
+    padding-top: 0;
+}
+
+.main-contact__list_page {
+    margin-bottom: 30px;
+}
+
+.string-bold {
+    display: inline-block;
+    font-family: "Geometria-Bold";
+    margin: 15px 0;
+
+    i {
+        font-family: "Geometria-Light";
+    }
+    @media(min-width: 768px) {
+        margin: 0 25px 0 0;
+    }
+}
+
+.memo-block__title {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: #EDEDED;
+    padding-left: 15px;
+    @media(min-width: 768px) {
+        padding-left: 50px;
+    }
+}
+
+.memo-icon {
+    text-align: center;
+    padding-top: 25px;
+}
+
+.string-bg {
+    border-radius: 10em;
+    display: inline-block;
+    text-align: center;
+    padding: 15px 18px;
+    font-family: "Geometria-Bold";
+    font-size: 18px;
+}
+
+.memo__list_age {
+    padding-bottom: 30px;
+    padding-left: 10px;
+    @media(min-width: 768px) {
+        padding-left: 20px;
+        border-right: 4px dashed #EDEDED;
+        padding-right: 22px;
+    }
+    @media(min-width: 992px) {
+        padding-left: 50px;
+    }
+
+    li {
+        &:not(:last-child) {
+            margin-bottom: 18px;
+        }
+    }
+}
+
+.memo-block_bottom {
+    .memo-block__item {
+        &:first-child {
+            @media(min-width: 768px) {
+                width: 250px;
+            }
+        }
+    }
+}
+
+.memo-block__title_right {
+    @media(min-width: 768px) {
+        border-radius: 0 10em 10em 0;
+    }
+}
+
+.memo-wrap__inner {
+    max-width: 1100px;
+    width: 100%;
+}
+
+.memo__list_num {
+    list-style-type: none;
+    counter-reset: num;
+    font-size: 15px;
+    padding-bottom: 30px;
+    padding-top: 27px;
+
+    li {
+        padding-left: 15px;
+        margin-bottom: 8px;
+        position: relative;
+
+        &:after {
+            content: counter(num) '.';
+            counter-increment: num;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+}
+
+.phone-bold {
+    font-family: "Geometria-Light";
+    font-size: 18px;
+    color: #211C2C;
+
+    b {
+        font-family: "Geometria-Bold";
+    }
+}
+
+.page-title {
+    font-family: "Geometria-Medium";
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.inner-block {
+    @media(min-width: 768px) {
+        display: flex;
+    }
+}
+
+.page-block__img {
+    max-width: 350px;
+    width: 100%;
+    @media(min-width: 768px) {
+        margin-right: 34px;
+    }
+}
+
+.inner-block__list {
+    b {
+        font-family: "Geometria-Bold";
+    }
+}
+
+.service-block__reception {
+    background: #EDEDED;
+    padding: 13px;
+    margin-bottom: 30px;
+    @media(min-width: 768px) {
+        display: flex;
+        align-items: center;
+    }
+
+    .modal-btn {
+        margin: 0;
+        @media(min-width: 768px) {
+            margin-right: 40px;
+        }
+    }
+}
+
+.memo__padding {
+    padding-left: 15px;
+    @media(min-width: 768px) {
+        padding-left: 50px;
+    }
+}
+
+.memo__title {
+    font-family: "Geometria-Bold";
+    background: #EDEDED;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 25px;
+    @media(min-width: 992px) {
+        margin-bottom: 55px;
+        padding: 15px 0 15px 50px;
+        text-align: left;
+    }
+}
+
+.memo-wrap {
+    background: #66529C;
+    padding: 40px 0;
+    margin-top: 25px;
+
+    .container {
+        @media(min-width: 992px) {
+            display: flex;
+            justify-content: flex-end;
+            padding: 0 15px;
+        }
+    }
+}
+
+.review-link {
+    text-align: center;
+    padding: 10px 10px 8px;
+    background: #EDEDED;
+    margin-bottom: 32px;
+
+    a {
+        box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.18);
+    }
+}
+
+.container__inner {
+    margin-bottom: 70px;
+    @media(min-width: 992px) {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.memo-wrap__title {
+    font-family: "Geometria-Medium";
+    font-size: 24px;
+    color: white;
+    margin-bottom: 36px;
+}
+
+.memo {
+    @media(min-width: 992px) {
+        border: 4px dashed white;
+        padding: 20px;
+    }
+
+    .string-bold {
+        margin: 0;
+    }
+}
+
+.memo__list_after {
+    position: relative;
+    padding-left: 80px;
+    margin-bottom: 20px;
+    @media(min-width: 768px) {
+        margin-right: 80px;
+        margin-bottom: 0;
+    }
+
+    &:after {
+        content: '!';
+        position: absolute;
+        font-family: "Geometria-Bold";
+        font-size: 28px;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        background: #C7337E;
+        color: white;
+    }
+}
+
+.memo-block {
+    @media(min-width: 768px) {
+        display: flex;
+    }
+}
+
+.memo-block_top {
+    margin-bottom: 25px;
+}
+
+.memo__inner {
+    background: white;
+    border-radius: 10px;
+}
+
+.memo__list_phone {
+    li {
+        margin-bottom: 6px;
+
+        &:last-child {
+            padding-top: 25px;
+        }
+    }
 }

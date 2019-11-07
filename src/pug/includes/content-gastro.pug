@@ -1,0 +1,166 @@
+.top-inner.top-inner_article
+    .container
+        h1.main-title Гастроэнтерологический центр. Дневной стационар №1
+
+        .breadcrumbs
+            a(href="#") Главная            
+            a(href="#") Дневной стационар
+            a(href="#") Гастроэнтерологический центр. Дневной стационар №1
+
+include ./top-slider.pug
+
+.container.articles
+    .page-block.page-block_nb
+        include ./sidebar-stacionar.pug
+        .content
+            .service-block
+                .service-block__item
+                    .service-block__img
+                        img(src="img/gastro.jpg") 
+
+                .service-block__item.service-block__item_width
+                    .main-contact.main-contact_service
+                        .main-contact__title 
+                            span Адрес:
+                        .main-contact__adress 620134 Свердловская область, Областной Центр (Свердловская обл.), <br>г. Екатеринбург, 
+                            span.text-pink ул. Нагорная, д.48
+
+                        .main-contact__title.main-contact__title_next
+                            span Руководство
+
+                        ul.main-contact__list.main-contact__list_page
+                            li
+                                |Врач | категории, заведущая: 
+                                a(href="#").link-specialist Куткова Марина Николаевна
+                            li
+                                |Ст.мед.сестра: 
+                                a(href="#").link-specialist Пакшаева Юлия Владимировна <br>
+                                |тел. 
+                                a(href="tel:73432324305") +7 (343) 232-43-05
+
+                    ul.service-block__reception
+                        li
+                            button.modal-btn.modal-btn_inner Записаться на прием
+                        li
+                            span.string-bold Записаться
+                        li   
+                            ul
+                                li
+                                    a(href="tel:73432285933").phone-bold +7 (343) 
+                                        b 228-59-33
+                                li
+                                    a(href="tel:73432463587").phone-bold +7 (343) 
+                                        b 246-35-87
+                    .service-block__article
+                        p Гастроэнтерологический центр создан на базе ДГКБ№11 в 2006 году. Он был преобразован из круглосуточного стационара, и важно, что здесь продолжили работать квалифицированные специалисты, которые имеют многолетний опыт лечения детей с заболеваниями жкт.       
+
+            h2.page-title Образование:
+            p Сегодня в Гастроцентре Детской городской клинической больницы №11 есть все необходимое для 
+                b диагностики и лечения детей в возрасте от 3-х до 17 лет. 
+                |Маленькие горожане могут получить здесь медицинскую помощь по направлению от врача-гастроэнтеролога.
+
+            .inner-block
+                .page-block__img
+                    img(src="img/gastro-min.jpg")
+                .page-block__article      
+                    h2.page-title Гастроцентр Детской <br>городской клинической <br>больницы №11 - это:
+                    ul.inner-block__list
+                        li
+                            |- Консультации специалистов, индивидуальный подход, доброжелательное отношение.
+                        li
+                            b - Комфортные условия пребывания.
+                        li 
+                            b - Полный спектр лабораторных исследований <br>
+                            |(биохимический анализ крови, клинический общий анализ крови и мочи, обследование кала на паразитозы и т.д.)
+
+.memo-wrap
+    .container
+        .memo-wrap__inner
+            .memo-wrap__title Памятка пациенту
+            .memo
+                .memo__inner
+                    .memo__title Запись на госпитализацию
+                    
+                    .memo-block.memo-block_top.memo__padding
+                        .memo-block__item
+                            ul.memo__list.memo__list_after
+                                li
+                                    span Запись проводится
+                                li
+                                    span.string-bold только по телефону
+                    
+                        .memo-block__item
+                            ul.memo__list.memo__list_phone
+                                li
+                                    a(href="tel:73432285933").phone-bold +7 (343) 
+                                        b 228-59-33
+                                li
+                                    span.string-bold c 14:00 до 15:00  
+                                        i часов
+                                li
+                                    |кроме субботы и воскресенья
+                    
+                    .memo-block.memo-block_bottom
+                        .memo-block__item
+                            .memo-block__title
+                                span.string-bold Возраст
+                            
+                            ul.memo__list.memo__list_age
+                                li
+                                    .memo-icon
+                                        img(src="img/family.png")    
+                                li
+                                    span.string-bg - c 3x до 17 лет
+                                li
+                                    span.string-bg - 11мес.29 дней
+                        
+                        .memo-block__item
+                            .memo-block__title.memo-block__title_right
+                                span.string-bold Иметь с собой при поступлении
+                            
+                            ol.memo__list.memo__list_num.memo__padding
+                                li
+                                    |Направление от гастроэнтеролога, педиатра
+                                li
+                                    |Справка об эпидблагополучии
+                                li
+                                    |Страховой полис (не копия)
+                                li
+                                    |Амбулаторная карта
+                                li
+                                    |Сведения о прививках <br>(отдельная справка или заполненный прививочный сертификат)
+                                li
+                                    |Девочкам с 14 лет результат осмотра гинекологом
+                                li
+                                    |Сменная обувь (бахилы не допускаются) для ребенка и родителей
+                                li
+                                    |Пеленка для осмотра        
+
+.container.container__inner
+    .content                        
+        h2.page-title Образование:
+        p Сегодня в Гастроцентре Детской городской клинической больницы №11 есть все необходимое для 
+            b диагностики и лечения детей в возрасте от 3-х до 17 лет. 
+            |Маленькие горожане могут получить здесь медицинскую помощь по направлению от врача-гастроэнтеролога.
+
+        .inner-block
+            .page-block__img
+                img(src="img/gastro-min.jpg")
+            .page-block__article      
+                h2.page-title Гастроцентр Детской <br>городской клинической <br>больницы №11 - это:
+                ul.inner-block__list
+                    li
+                        |- Консультации специалистов, индивидуальный подход, доброжелательное отношение.
+                    li
+                        b - Комфортные условия пребывания.
+                    li 
+                        b - Полный спектр лабораторных исследований <br>
+                        |(биохимический анализ крови, клинический общий анализ крови и мочи, обследование кала на паразитозы и т.д.)                            
+
+.review-link
+    a(href="#").btn-animate.btn-animate_white
+        span Посмотреть отзывы наших клиентов 
+                    
+.container                            
+    .slider-inner.slider-inner_no-border
+        include ./slider-inner.pug
