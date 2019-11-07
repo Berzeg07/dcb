@@ -156,6 +156,16 @@ $(document).ready(function() {
         }
     });
 
+    var serviceSlider = new Swiper('.service-slider', {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
+    });
+
     var infoSlider = new Swiper('.info-slider', {
         slidesPerView: 7,
         spaceBetween: 15,
