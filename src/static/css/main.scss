@@ -3790,13 +3790,21 @@ body.hidden {
 .main-contact__title {
     font-family: "Geometria-Bold";
     margin-bottom: 20px;
+    max-width: 312px;
+    width: 100%;
 
     span {
         display: inline-block;
+        width: 100%;
         border-radius: 30px;
         background: #EDEDED;
         padding: 10px 25px;
     }
+}
+
+.main-contact__title_next{
+    max-width: 200px;
+    width: 100%;
 }
 
 .place-info__hidden {
