@@ -1,19 +1,58 @@
 $(document).ready(function() {
 
-    $('.qa-block').hover(function(){
+    $(window).on('load', function() {
+        var $preloader = $('#preloader');
+        $preloader.delay(1500).fadeOut('slow');
+    });
+    // $('.reviews-block').hover(function() {
+    //     $(this).find('.reviews-block__btn').stop().slideToggle();
+    // });
+
+    $('.link-box__phone').hover(function(){
+        $(this).removeClass('link-box__phone_anim');
+        $(this).mouseleave(function(){
+            $(this).addClass('link-box__phone_anim');
+
+        });
+    });
+
+    $('.reviews-show').click(function(e){
+        e.preventDefault();
+        $(this).parents('.reviews-block').find('.reviews-block__hidden').stop().slideToggle();
+        $(this).toggleClass('active');
+        if($(this).hasClass('active')){
+            $(this).html('<span>' + 'Свернуть'+ '</span>');
+        }else{
+            $(this).html('<span>' + 'Читать'+ '</span>');
+        }
+    });
+
+    $('.modal-thanks__close').click(function(){
+        $('.modal-thanks').removeClass('active');
+        removeBlur();
+    });
+
+    $('.reception__btn_submit').click(function(){
+        $('.modal').removeClass('active');
+        $('.modal-thanks').addClass('active');
+    });
+
+    $('.qa-block').hover(function() {
         $(this).find('.question__btn-wrap').stop().slideToggle();
     });
 
-    $('.reviews-block').hover(function(){
-        $(this).find('.reviews-block__btn').stop().slideToggle();
-    });
 
-    $('.btn-animate_question').click(function(e){
+
+    $('.btn-animate_question').click(function(e) {
         e.preventDefault();
+        $(this).addClass('active');
+        $(this).parents('.question').find('.question__num').toggleClass('active');
         $(this).parents('.qa-block').find('.answear').slideToggle();
     });
 
-    $('.close-answear').click(function(){
+    $('.close-answear').click(function() {
+        $('.btn-animate_question').removeClass('active');
+        $('.question__num').removeClass('active');
         $(this).parents('.answear').slideUp();
     });
 
@@ -136,10 +175,18 @@ $(document).ready(function() {
         //   },
     });
 
+    $('.top-slider__item a').hover(function(){
+        $('.top-slider__item a').toggleClass('shadow');
+        $(this).removeClass('shadow');
+    });
+
     var specialist = new Swiper('.top-slider', {
         slidesPerView: 3,
         spaceBetween: 0,
         loop: true,
+        autoplay: {
+            delay: 3000,
+        },
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -179,12 +226,6 @@ $(document).ready(function() {
         },
         breakpoints: {
             320: {
-                slidesPerView: 1
-            },
-            399: {
-                slidesPerView: 1
-            },
-            400: {
                 slidesPerView: 2
             },
             599: {
@@ -344,6 +385,12 @@ $(document).ready(function() {
         $(this).addClass('active');
         $('.modal-btn').removeClass('full');
         $('.modal-btn').addClass('min');
+        $(this).mouseleave(function() {
+            $(this).find('.phone-box__hidden').slideUp();
+            $(this).removeClass('active');
+            $('.modal-btn').addClass('full');
+            $('.modal-btn').removeClass('min');
+        });
     });
 
     $('.modal-btn').hover(function() {
@@ -902,7 +949,7 @@ $(document).ready(function() {
         $('.overlay').fadeOut();
     }
 
-    $('.marker').click(function() {
+    $('.adress-map').click(function() {
         $('.main-map').fadeIn();
         addBlur();
         $('.map-close').click(function() {

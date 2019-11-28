@@ -1,12 +1,16 @@
+.preloder#preloader
+    .preloder__img
+        img(src="img/plus.png")
+
 .main-map
     .main-map__inner
         .map-close +
         #main-map 
 
-
 .modal.modal_reception-first
     .modal__item
         .modal__top
+            .reseption__close.reseption__close_mob
             .modal__title Записаться на прием
             .modal__article
                 |Заполните заявку и администратор позвонит вам в ближайшее рабочее время для подтверждения записи
@@ -150,4 +154,12 @@ form(action="#").modal.modal_reception-next
                 li
                     button(type="button").reception__back
                 li    
-                    button(type="submit").reception__btn.reception__btn_submit Записаться
+                    button(type="button").reception__btn.reception__btn_submit Записаться
+
+.modal-thanks
+    .modal-thanks__inner
+        .reseption__close.modal-thanks__close
+        .modal-thanks__title Заявка успешно оформлена
+        .modal-thanks__article Администратор свяжется с вами в ближайшее рабочее время для подтверждения записи
+    
+    

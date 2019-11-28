@@ -15,11 +15,11 @@ include ./top-slider.pug
         .content
             .service-block
                 .service-block__item
-                    .service-block__img
+                    .service-block__img.service-block__img_mb
                         img(src="img/gastro.jpg") 
 
-                .service-block__item.service-block__item_width
-                    .main-contact.main-contact_service
+                .service-block__item.service-block__item_width.no-padding
+                    .main-contact.main-contact_service.sb-padding
                         .main-contact__title 
                             span Адрес:
                         .main-contact__adress 620134 Свердловская область, Областной Центр (Свердловская обл.), <br>г. Екатеринбург, 
@@ -38,9 +38,11 @@ include ./top-slider.pug
                                 |тел. 
                                 a(href="tel:73432324305") +7 (343) 232-43-05
 
-                    ul.service-block__reception
+                    ul.service-block__reception.sb-padding
                         li
-                            button.modal-btn.modal-btn_inner Записаться на прием
+                            //- button.modal-btn.modal-btn_inner Записаться на прием
+                            button.modal-btn.full.modal-btn_footer(type="button")
+                                span Записаться <br>на прием
                         li
                             span.string-bold Записаться
                         li   
@@ -51,7 +53,8 @@ include ./top-slider.pug
                                 li
                                     a(href="tel:73432463587").phone-bold +7 (343) 
                                         b 246-35-87
-                    .service-block__article
+                    
+                    .service-block__article.sb-padding
                         p Гастроэнтерологический центр создан на базе ДГКБ№11 в 2006 году. Он был преобразован из круглосуточного стационара, и важно, что здесь продолжили работать квалифицированные специалисты, которые имеют многолетний опыт лечения детей с заболеваниями жкт.       
 
             h2.page-title Образование:
